@@ -120,11 +120,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ── Nav logo swap on scroll (gold on dark bg) ──
-const navLogo = document.getElementById('navLogo');
-if (navLogo) {
-    window.addEventListener('scroll', () => {
-        // Single icon used throughout — no swap needed
-        navLogo.src = 'images/tmg-gold-icon.png';
+// ── FAQ Accordion ──
+function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const toggle = btn.querySelector('.faq-toggle');
+    const isOpen = answer.classList.contains('open');
+
+    // Close all others
+    document.querySelectorAll('.faq-answer.open').forEach(a => {
+        a.classList.remove('open');
+        a.previousElementSibling.querySelector('.faq-toggle').textContent = '+';
     });
+
+    if (!isOpen) {
+        answer.classList.add('open');
+        toggle.textContent = '−';
+    }
+}
+
+// ── Newsletter Subscribe ──
+function handleSubscribe(e) {
+    e.preventDefault();
+    const input = e.target.querySelector('input');
+    const btn = e.target.querySelector('button');
+    btn.textContent = 'Subscribed';
+    btn.style.background = 'transparent';
+    btn.style.color = '#D4AF37';
+    input.value = '';
+    setTimeout(() => {
+        btn.textContent = 'Join the Movement';
+        btn.style.background = '';
+        btn.style.color = '';
+    }, 3000);
+    return false;
 }

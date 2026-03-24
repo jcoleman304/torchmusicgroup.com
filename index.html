@@ -19,14 +19,7 @@
 
 <!-- Loader -->
 <div class="loader" id="loader">
-    <svg class="loader-torch" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37" opacity="0.8"/>
-        <path d="M30 8C30 8 24 16 24 22C24 25.314 26.686 28 30 28C33.314 28 36 25.314 36 22C36 16 30 8 30 8Z" fill="#E8C547"/>
-        <rect x="27" y="34" width="6" height="30" fill="#D4AF37"/>
-        <rect x="20" y="62" width="20" height="4" rx="1" fill="#D4AF37"/>
-        <rect x="22" y="66" width="16" height="6" rx="1" fill="#D4AF37" opacity="0.7"/>
-    </svg>
-    <div class="loader-text">Torch Music Group</div>
+    <img src="images/tmg-gold-icon.png" alt="Loading" class="loader-icon">
 </div>
 
 <!-- Custom Cursor -->
@@ -39,12 +32,22 @@
         <img src="images/tmg-gold-icon.png" alt="Torch Music Group" class="nav-logo" id="navLogo">
     </a>
     <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#roster">Roster</a></li>
+        <li><a href="#artists">Artists</a></li>
+        <li><a href="#sync">Sync</a></li>
         <li><a href="#music">Music</a></li>
         <li><a href="#studio">Studio</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#faqs">FAQs</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="nav-socials">
+        <a href="#" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="currentColor" stroke="none"/></svg>
+        </a>
+    </div>
     <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
         <span></span><span></span><span></span>
     </button>
@@ -52,10 +55,12 @@
 
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
-    <a href="#about" onclick="closeMobile()">About</a>
-    <a href="#roster" onclick="closeMobile()">Roster</a>
+    <a href="#artists" onclick="closeMobile()">Artists</a>
+    <a href="#sync" onclick="closeMobile()">Sync</a>
     <a href="#music" onclick="closeMobile()">Music</a>
     <a href="#studio" onclick="closeMobile()">Studio</a>
+    <a href="#careers" onclick="closeMobile()">Careers</a>
+    <a href="#faqs" onclick="closeMobile()">FAQs</a>
     <a href="#contact" onclick="closeMobile()">Contact</a>
 </div>
 
@@ -66,8 +71,6 @@
     <div class="hero-particles" id="particles"></div>
     <div class="hero-content">
         <img src="images/tmg-logo.png" alt="Torch Music Group" class="hero-logo-main">
-        <p class="hero-subtitle">Artist Development &middot; Management &middot; A&R</p>
-        <div class="hero-line"></div>
     </div>
     <div class="hero-scroll">
         <span>Explore</span>
@@ -75,37 +78,7 @@
     </div>
 </section>
 
-<!-- Marquee -->
-<div class="marquee-section">
-    <div class="marquee-track">
-        <span class="marquee-item filled">Legacy</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item">Ownership</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item filled">Excellence</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item">Culture</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item filled">Precision</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item">Influence</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item filled">Legacy</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item">Ownership</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item filled">Excellence</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item">Culture</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item filled">Precision</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item">Influence</span>
-        <span class="marquee-dot">&#9670;</span>
-    </div>
-</div>
-
-<!-- About -->
+<!-- About / Mission -->
 <section class="section about" id="about">
     <div class="about-left">
         <div class="section-label reveal">The Vision</div>
@@ -125,198 +98,175 @@
     </div>
 </section>
 
-<!-- Divisions -->
-<section class="section divisions" id="divisions">
-    <div class="divisions-inner">
-        <div class="section-label reveal">The Ecosystem</div>
-        <h2 class="section-title reveal reveal-delay-1">Our <span class="gold">Divisions</span></h2>
-        <p class="section-text reveal reveal-delay-2">A vertically integrated music company designed for artists who want more than a deal &mdash; they want a legacy.</p>
+<!-- Artists (Feature 2) -->
+<section class="section artists-section" id="artists">
+    <div class="section-inner">
+        <div class="section-label reveal">The Roster</div>
+        <h2 class="section-title reveal reveal-delay-1">Artist <span class="gold">Spotlight</span></h2>
+        <p class="section-text reveal reveal-delay-2">Each one selected with intention, developed with discipline, and positioned for legacy.</p>
 
-        <div class="divisions-grid">
-            <div class="division-card reveal">
-                <span class="division-number">01</span>
-                <h3>Artist Management</h3>
-                <p>Full-service career architecture rooted in strategy, development, and long-range positioning. We manage trajectories, not just schedules.</p>
+        <div class="artist-strip">
+            <div class="artist-strip-card reveal">
+                <div class="artist-strip-img">
+                    <img src="images/tmg-gold-icon.png" alt="RNB.FOEMOB" class="artist-placeholder-icon">
+                </div>
+                <div class="artist-strip-info">
+                    <h3>RNB.FOEMOB</h3>
+                    <span class="artist-strip-label">Atlantic Records</span>
+                    <p>Genre-bending collective redefining R&B, hip-hop, and cultural expression. Currently releasing &ldquo;The Family&rdquo; album campaign.</p>
+                    <div class="artist-strip-links">
+                        <a href="#" class="artist-link">Spotify</a>
+                        <a href="#" class="artist-link">Apple Music</a>
+                        <a href="#" class="artist-link">Instagram</a>
+                    </div>
+                </div>
             </div>
-            <div class="division-card reveal reveal-delay-1">
-                <span class="division-number">02</span>
-                <h3>A&R</h3>
-                <p>Talent identification, creative direction, and project development. We find the signal in the noise and develop it into something undeniable.</p>
+            <div class="artist-strip-card reveal reveal-delay-1">
+                <div class="artist-strip-img">
+                    <img src="images/tmg-gold-icon.png" alt="DKE Author" class="artist-placeholder-icon">
+                </div>
+                <div class="artist-strip-info">
+                    <h3>DKE Author</h3>
+                    <span class="artist-strip-label">Torch Music Group</span>
+                    <p>Building a catalog rooted in authenticity, lyrical depth, and deliberate creative direction.</p>
+                    <div class="artist-strip-links">
+                        <a href="#" class="artist-link">Spotify</a>
+                        <a href="#" class="artist-link">Apple Music</a>
+                    </div>
+                </div>
             </div>
-            <div class="division-card reveal reveal-delay-2">
-                <span class="division-number">03</span>
-                <h3>Label Services</h3>
-                <p>Distribution strategy, marketing infrastructure, and release execution for artists who want label-level resources with independent ownership.</p>
+            <div class="artist-strip-card reveal reveal-delay-2">
+                <div class="artist-strip-img">
+                    <img src="images/tmg-gold-icon.png" alt="Oliver Cole" class="artist-placeholder-icon">
+                </div>
+                <div class="artist-strip-info">
+                    <h3>Oliver Cole</h3>
+                    <span class="artist-strip-label">TMG AI Artists</span>
+                    <p>Pop Soul and Neo-Soul. Warm, organic production with emotional authenticity at the intersection of soul and Americana.</p>
+                    <div class="artist-strip-links">
+                        <a href="#" class="artist-link">Listen</a>
+                    </div>
+                </div>
             </div>
-            <div class="division-card reveal reveal-delay-3">
-                <span class="division-number">04</span>
-                <h3>Creative Development</h3>
-                <p>Digital products, consulting, and artist education. From &ldquo;How to Get Signed&rdquo; to hands-on A&R mentorship, we share what we know.</p>
+            <div class="artist-strip-card artist-coming-soon reveal reveal-delay-3">
+                <div class="artist-strip-img">
+                    <img src="images/tmg-gold-icon.png" alt="Coming Soon" class="artist-placeholder-icon" style="opacity:0.2">
+                </div>
+                <div class="artist-strip-info">
+                    <h3>More Artists Coming</h3>
+                    <span class="artist-strip-label">2026</span>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Roster -->
-<section class="section roster" id="roster">
-    <div class="section-label reveal">The Roster</div>
-    <h2 class="section-title reveal reveal-delay-1">Our <span class="gold">Artists</span></h2>
-    <p class="section-text reveal reveal-delay-2">Each one selected with intention, developed with discipline, and positioned for legacy.</p>
+<!-- Sync Licensing (Feature 5) -->
+<section class="section sync-section" id="sync">
+    <div class="section-inner">
+        <div class="section-label reveal">Licensing</div>
+        <h2 class="section-title reveal reveal-delay-1">Sync &amp; <span class="gold">Placement</span></h2>
+        <p class="section-text reveal reveal-delay-2">Torch Music Group catalogs are available for sync licensing across TV, film, commercials, trailers, and video games. Premium sound. Intentional placement.</p>
 
-    <div class="roster-grid">
-        <!-- RNB.FOEMOB -->
-        <div class="roster-card placeholder reveal" data-category="artists">
-            <div class="placeholder-inner">
-                <svg class="placeholder-icon" viewBox="0 0 60 80" fill="none">
-                    <path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37" opacity="0.4"/>
-                    <rect x="27" y="34" width="6" height="26" fill="#D4AF37" opacity="0.3"/>
-                    <rect x="20" y="58" width="20" height="4" rx="1" fill="#D4AF37" opacity="0.3"/>
-                </svg>
-                <div class="placeholder-name">RNB.FOEMOB</div>
-                <div class="placeholder-role">Atlantic Records</div>
-                <p class="placeholder-bio">Genre-bending collective redefining the intersection of R&B, hip-hop, and cultural expression. Currently releasing &ldquo;The Family&rdquo; album campaign.</p>
+        <div class="sync-grid">
+            <div class="sync-category reveal">
+                <div class="sync-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <h3>Television</h3>
+                <p>Available for episodic, reality, documentary, and scripted placements.</p>
+            </div>
+            <div class="sync-category reveal reveal-delay-1">
+                <div class="sync-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5"><path d="M4 8V4a1 1 0 011-1h14a1 1 0 011 1v16a1 1 0 01-1 1H5a1 1 0 01-1-1v-4"/><polygon points="10,8 16,12 10,16" fill="#D4AF37" opacity="0.3"/></svg>
+                </div>
+                <h3>Film &amp; Trailers</h3>
+                <p>Cinematic, emotional, and high-impact music for features and promotional trailers.</p>
+            </div>
+            <div class="sync-category reveal reveal-delay-2">
+                <div class="sync-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                </div>
+                <h3>Commercials</h3>
+                <p>Brand campaigns, digital ads, and commercial spots across all media.</p>
+            </div>
+            <div class="sync-category reveal reveal-delay-3">
+                <div class="sync-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5"><path d="M6 12L3.27 3.13A1 1 0 014.36 2h15.28a1 1 0 011.09 1.13L18 12"/><rect x="6" y="12" width="12" height="8" rx="1"/><path d="M10 12v8M14 12v8"/></svg>
+                </div>
+                <h3>Video Games</h3>
+                <p>Immersive and dynamic tracks for gaming soundtracks and interactive media.</p>
             </div>
         </div>
 
-        <!-- DKE Author -->
-        <div class="roster-card placeholder reveal reveal-delay-1" data-category="artists">
-            <div class="placeholder-inner">
-                <svg class="placeholder-icon" viewBox="0 0 60 80" fill="none">
-                    <path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37" opacity="0.4"/>
-                    <rect x="27" y="34" width="6" height="26" fill="#D4AF37" opacity="0.3"/>
-                    <rect x="20" y="58" width="20" height="4" rx="1" fill="#D4AF37" opacity="0.3"/>
-                </svg>
-                <div class="placeholder-name">DKE Author</div>
-                <div class="placeholder-role">Torch Music Group</div>
-                <p class="placeholder-bio">A&R development artist building a catalog rooted in authenticity, lyrical depth, and deliberate creative direction.</p>
-            </div>
-        </div>
-
-        <!-- Oliver Cole -->
-        <div class="roster-card placeholder reveal reveal-delay-2" data-category="artists">
-            <div class="placeholder-inner">
-                <svg class="placeholder-icon" viewBox="0 0 60 80" fill="none">
-                    <path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37" opacity="0.4"/>
-                    <rect x="27" y="34" width="6" height="26" fill="#D4AF37" opacity="0.3"/>
-                    <rect x="20" y="58" width="20" height="4" rx="1" fill="#D4AF37" opacity="0.3"/>
-                </svg>
-                <div class="placeholder-name">Oliver Cole</div>
-                <div class="placeholder-role">TMG AI Artists</div>
-                <p class="placeholder-bio">Pop Soul and Neo-Soul. Warm, organic production with emotional authenticity at the intersection of soul and Americana.</p>
-            </div>
-        </div>
-
-        <!-- Coming Soon -->
-        <div class="roster-card placeholder reveal reveal-delay-3" data-category="artists">
-            <div class="placeholder-inner">
-                <svg class="placeholder-icon" viewBox="0 0 60 80" fill="none">
-                    <path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37" opacity="0.4"/>
-                    <rect x="27" y="34" width="6" height="26" fill="#D4AF37" opacity="0.3"/>
-                    <rect x="20" y="58" width="20" height="4" rx="1" fill="#D4AF37" opacity="0.3"/>
-                </svg>
-                <div class="placeholder-name">Coming Soon</div>
-                <div class="placeholder-role">Artist</div>
-            </div>
+        <div class="sync-cta reveal">
+            <p>Interested in licensing Torch Music Group catalog?</p>
+            <a href="mailto:sync@torchmusicgroup.com" class="contact-btn">Inquire About Sync</a>
         </div>
     </div>
 </section>
 
-<!-- Music -->
+<!-- Music / Listen (Feature 7) -->
 <section class="section music" id="music">
-    <div class="section-label reveal">The Music</div>
-    <h2 class="section-title reveal reveal-delay-1">Latest <span class="gold">Releases</span></h2>
-    <p class="section-text reveal reveal-delay-2">Every record that carries Torch fingerprints is held to the same standard &mdash; intentional, precise, and built for impact.</p>
+    <div class="section-inner">
+        <div class="section-label reveal">The Music</div>
+        <h2 class="section-title reveal reveal-delay-1">Latest <span class="gold">Releases</span></h2>
+        <p class="section-text reveal reveal-delay-2">Every record that carries Torch fingerprints is held to the same standard &mdash; intentional, precise, and built for impact.</p>
 
-    <div class="music-grid">
-        <div class="music-card reveal">
-            <div class="music-cover">
-                <div class="music-cover-placeholder">
-                    <svg viewBox="0 0 60 80" fill="none">
-                        <path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37"/>
-                        <rect x="27" y="34" width="6" height="26" fill="#D4AF37" opacity="0.5"/>
-                        <rect x="20" y="58" width="20" height="4" rx="1" fill="#D4AF37" opacity="0.4"/>
-                    </svg>
+        <div class="music-grid">
+            <div class="music-card reveal">
+                <div class="music-cover">
+                    <div class="music-cover-placeholder">
+                        <svg viewBox="0 0 60 80" fill="none"><path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37"/><rect x="27" y="34" width="6" height="26" fill="#D4AF37" opacity="0.5"/><rect x="20" y="58" width="20" height="4" rx="1" fill="#D4AF37" opacity="0.4"/></svg>
+                    </div>
+                    <div class="music-play"><svg viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19"/></svg></div>
                 </div>
-                <div class="music-play">
-                    <svg viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19"/></svg>
-                </div>
+                <div class="music-title">That Dude (feat. STL Von)</div>
+                <div class="music-artist">RNB.FOEMOB</div>
             </div>
-            <div class="music-title">That Dude (feat. STL Von)</div>
-            <div class="music-artist">RNB.FOEMOB</div>
+            <div class="music-card reveal reveal-delay-1">
+                <div class="music-cover">
+                    <div class="music-cover-placeholder">
+                        <svg viewBox="0 0 60 80" fill="none"><path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37"/><rect x="27" y="34" width="6" height="26" fill="#D4AF37" opacity="0.5"/><rect x="20" y="58" width="20" height="4" rx="1" fill="#D4AF37" opacity="0.4"/></svg>
+                    </div>
+                    <div class="music-play"><svg viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19"/></svg></div>
+                </div>
+                <div class="music-title">Come Up (feat. Headhuncho Amir)</div>
+                <div class="music-artist">RNB.FOEMOB</div>
+            </div>
+            <div class="music-card reveal reveal-delay-2">
+                <div class="music-cover">
+                    <div class="music-cover-placeholder">
+                        <svg viewBox="0 0 60 80" fill="none"><path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37"/><rect x="27" y="34" width="6" height="26" fill="#D4AF37" opacity="0.5"/><rect x="20" y="58" width="20" height="4" rx="1" fill="#D4AF37" opacity="0.4"/></svg>
+                    </div>
+                    <div class="music-play"><svg viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19"/></svg></div>
+                </div>
+                <div class="music-title">The Family</div>
+                <div class="music-artist">RNB.FOEMOB &middot; Album Coming Soon</div>
+            </div>
         </div>
 
-        <div class="music-card reveal reveal-delay-1">
-            <div class="music-cover">
-                <div class="music-cover-placeholder">
-                    <svg viewBox="0 0 60 80" fill="none">
-                        <path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37"/>
-                        <rect x="27" y="34" width="6" height="26" fill="#D4AF37" opacity="0.5"/>
-                        <rect x="20" y="58" width="20" height="4" rx="1" fill="#D4AF37" opacity="0.4"/>
-                    </svg>
+        <!-- YouTube / Spotify Embeds -->
+        <div class="music-embeds reveal">
+            <h3 class="embed-heading">Listen Now</h3>
+            <p class="embed-sub">Subscribe and follow Torch Music Group artists across all platforms.</p>
+            <div class="embed-placeholder">
+                <div class="embed-box">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="#D4AF37" opacity="0.5"/></svg>
+                    <span>YouTube Playlist</span>
+                    <span class="embed-note">Embed your artist videos here</span>
                 </div>
-                <div class="music-play">
-                    <svg viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19"/></svg>
-                </div>
-            </div>
-            <div class="music-title">Come Up (feat. Headhuncho Amir)</div>
-            <div class="music-artist">RNB.FOEMOB</div>
-        </div>
-
-        <div class="music-card reveal reveal-delay-2">
-            <div class="music-cover">
-                <div class="music-cover-placeholder">
-                    <svg viewBox="0 0 60 80" fill="none">
-                        <path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37"/>
-                        <rect x="27" y="34" width="6" height="26" fill="#D4AF37" opacity="0.5"/>
-                        <rect x="20" y="58" width="20" height="4" rx="1" fill="#D4AF37" opacity="0.4"/>
-                    </svg>
-                </div>
-                <div class="music-play">
-                    <svg viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19"/></svg>
+                <div class="embed-box">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="#D4AF37" opacity="0.5"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                    <span>Spotify Playlist</span>
+                    <span class="embed-note">Embed your Spotify playlist here</span>
                 </div>
             </div>
-            <div class="music-title">The Family</div>
-            <div class="music-artist">RNB.FOEMOB &middot; Album Coming Soon</div>
-        </div>
-
-        <div class="music-card reveal reveal-delay-3">
-            <div class="music-cover">
-                <div class="music-cover-placeholder">
-                    <svg viewBox="0 0 60 80" fill="none">
-                        <path d="M30 0C30 0 18 14 18 24C18 30.627 23.373 36 30 36C36.627 36 42 30.627 42 24C42 14 30 0 30 0Z" fill="#D4AF37"/>
-                        <rect x="27" y="34" width="6" height="26" fill="#D4AF37" opacity="0.5"/>
-                        <rect x="20" y="58" width="20" height="4" rx="1" fill="#D4AF37" opacity="0.4"/>
-                    </svg>
-                </div>
-                <div class="music-play">
-                    <svg viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19"/></svg>
-                </div>
-            </div>
-            <div class="music-title">New Music</div>
-            <div class="music-artist">Coming Soon</div>
         </div>
     </div>
 </section>
 
-<!-- Marquee 2 -->
-<div class="marquee-section">
-    <div class="marquee-track marquee-reverse">
-        <span class="marquee-item">Not for Mass Access</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item filled">Built for Intentional Greatness</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item">Not for Mass Access</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item filled">Built for Intentional Greatness</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item">Not for Mass Access</span>
-        <span class="marquee-dot">&#9670;</span>
-        <span class="marquee-item filled">Built for Intentional Greatness</span>
-        <span class="marquee-dot">&#9670;</span>
-    </div>
-</div>
-
-<!-- Studio -->
+<!-- Studio / Booking (Feature 6) -->
 <section class="section studio" id="studio">
     <div class="studio-inner">
         <div class="studio-visual reveal">
@@ -353,37 +303,165 @@
                     <div class="studio-feature-text">Luxury hospitality meets world-class studio infrastructure &mdash; the standard, not the exception.</div>
                 </div>
             </div>
-            <a href="https://torchatl.com" target="_blank" class="studio-cta reveal reveal-delay-4">
-                Explore Torch ATL
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+            <div class="studio-cta-row reveal reveal-delay-4">
+                <a href="https://torchatl.com" target="_blank" class="studio-cta">
+                    Explore Torch ATL
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="mailto:bookings@torchatl.com" class="studio-cta">
+                    Book a Session
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Manifesto -->
-<section class="section manifesto" id="manifesto">
-    <div class="manifesto-inner">
-        <div class="section-label reveal">Manifesto</div>
-        <div class="manifesto-text">
-            <p class="manifesto-lead reveal">We don&rsquo;t chase moments.<br>We build what lasts.</p>
-            <p class="reveal reveal-delay-1">In an industry addicted to speed, noise, and short attention spans &mdash; we chose a different path.</p>
-            <p class="reveal reveal-delay-1">We believe music is not disposable. We believe artists are not content. We believe culture is not something you follow. It&rsquo;s something you shape.</p>
-            <p class="reveal reveal-delay-2">Torch was not created to compete. It was created to set a standard.</p>
-            <p class="reveal reveal-delay-2">Every record. Every visual. Every move. Intentional. Precise. Built to last beyond the moment it&rsquo;s released.</p>
-            <p class="reveal reveal-delay-3">We believe in ownership. Not just of music &mdash; but of identity, narrative, and future.</p>
-            <p class="manifesto-closing reveal reveal-delay-3">This is not just music.<br><span class="gold">This is legacy.</span></p>
+<!-- Careers (Feature 11) -->
+<section class="section careers-section" id="careers">
+    <div class="section-inner">
+        <div class="section-label reveal">Join Us</div>
+        <h2 class="section-title reveal reveal-delay-1"><span class="gold">Careers</span> at Torch</h2>
+        <p class="section-text reveal reveal-delay-2">We&rsquo;re building the infrastructure for the next generation of music. If you move with intention and refuse to settle for average, we want to hear from you.</p>
+
+        <div class="careers-grid">
+            <div class="career-card reveal">
+                <h3>A&R Coordinator</h3>
+                <span class="career-type">Full-Time &middot; Atlanta, GA</span>
+                <p>Support A&R operations including artist development, session coordination, and creative project management.</p>
+                <a href="mailto:careers@torchmusicgroup.com?subject=A%26R%20Coordinator%20Application" class="career-apply">Apply</a>
+            </div>
+            <div class="career-card reveal reveal-delay-1">
+                <h3>Marketing &amp; Content Intern</h3>
+                <span class="career-type">Internship &middot; Atlanta, GA</span>
+                <p>Create content, manage social strategy, and support marketing campaigns across the Torch Music Group ecosystem.</p>
+                <a href="mailto:careers@torchmusicgroup.com?subject=Marketing%20Intern%20Application" class="career-apply">Apply</a>
+            </div>
+            <div class="career-card reveal reveal-delay-2">
+                <h3>Studio Operations</h3>
+                <span class="career-type">Full-Time &middot; Atlanta, GA</span>
+                <p>Oversee daily studio operations, session management, equipment maintenance, and client experience at Torch ATL.</p>
+                <a href="mailto:careers@torchmusicgroup.com?subject=Studio%20Operations%20Application" class="career-apply">Apply</a>
+            </div>
+        </div>
+
+        <p class="careers-note reveal">Don&rsquo;t see your role? We&rsquo;re always looking for exceptional talent. Email <a href="mailto:careers@torchmusicgroup.com">careers@torchmusicgroup.com</a></p>
+    </div>
+</section>
+
+<!-- FAQs (Feature 12) -->
+<section class="section faqs-section" id="faqs">
+    <div class="section-inner">
+        <div class="section-label reveal">Information</div>
+        <h2 class="section-title reveal reveal-delay-1">Frequently Asked <span class="gold">Questions</span></h2>
+
+        <div class="faq-list">
+            <div class="faq-category reveal">
+                <h3 class="faq-category-title">Music Submissions</h3>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        How do I submit music to Torch Music Group?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Send your best 2&ndash;3 tracks (links only &mdash; no attachments) to <a href="mailto:ar@torchmusicgroup.com">ar@torchmusicgroup.com</a>. Include your name, city, social media links, and a brief bio. We listen to every submission. If it&rsquo;s a fit, we&rsquo;ll reach out within 2&ndash;4 weeks.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        What kind of artists does Torch sign?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We look for artists who are committed to craft, have a clear identity, and are building something that lasts. Genre is secondary &mdash; we prioritize intention, authenticity, and work ethic. We sign artists, not trends.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Does Torch accept producer or songwriter submissions?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Producers and songwriters can submit to the same email. Include credits, a brief description of your sound, and links to your work. We&rsquo;re always looking for collaborators who match our standard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-category reveal reveal-delay-1">
+                <h3 class="faq-category-title">Business &amp; Partnerships</h3>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        What does Torch Music Group offer artists?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Full-service artist management, A&R, creative direction, release strategy, brand development, and access to the Torch ATL recording estate. Every deal is structured around ownership, transparency, and long-term artist growth.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Who do I contact for sync licensing?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For sync inquiries, contact <a href="mailto:sync@torchmusicgroup.com">sync@torchmusicgroup.com</a> with details about your project, placement type, and timeline. We&rsquo;ll respond with available catalog options.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        How can I partner with Torch?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For partnerships, sponsorships, or business inquiries, email <a href="mailto:info@torchmusicgroup.com">info@torchmusicgroup.com</a>. We&rsquo;re open to strategic collaborations that align with our brand and mission.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-category reveal reveal-delay-2">
+                <h3 class="faq-category-title">Careers &amp; Internships</h3>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Does Torch offer internships?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We run internship programs in A&R, marketing, studio operations, and artist management. Open positions are listed in the Careers section above. You can also send a general inquiry to <a href="mailto:careers@torchmusicgroup.com">careers@torchmusicgroup.com</a>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Where is Torch Music Group based?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Torch Music Group is headquartered in Atlanta, Georgia. Our recording estate, Torch ATL, operates as a private, membership-only creative facility in the Atlanta metro area.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Contact CTA -->
+<!-- Newsletter Subscribe (Feature 8) -->
+<section class="section subscribe-section" id="subscribe">
+    <div class="subscribe-inner">
+        <h2 class="section-title reveal">Stay <span class="gold">Connected</span></h2>
+        <p class="section-text reveal reveal-delay-1" style="text-align:center; margin: 0 auto 32px;">New music, artist updates, sync opportunities, and Torch insider access. No spam. Just signal.</p>
+        <form class="subscribe-form reveal reveal-delay-2" onsubmit="return handleSubscribe(event)">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Join the Movement</button>
+        </form>
+    </div>
+</section>
+
+<!-- Contact (Feature 9 footer + Contact CTA) -->
 <section class="section contact" id="contact">
     <div class="contact-inner">
         <div class="section-label reveal">Connect</div>
         <h2 class="contact-title reveal reveal-delay-1">This Is Not for<br><span class="gold">Everyone</span></h2>
         <p class="contact-text reveal reveal-delay-2">
-            If you&rsquo;re building something real &mdash; something intentional, something that lasts &mdash; we want to hear from you. Artists, producers, songwriters, partners.
+            If you&rsquo;re building something real &mdash; something intentional, something that lasts &mdash; we want to hear from you.
         </p>
         <div class="contact-emails reveal reveal-delay-2">
             <div class="contact-email-item">
@@ -395,8 +473,16 @@
                 <a href="mailto:ar@torchmusicgroup.com">ar@torchmusicgroup.com</a>
             </div>
             <div class="contact-email-item">
+                <span class="contact-email-label">Sync Licensing</span>
+                <a href="mailto:sync@torchmusicgroup.com">sync@torchmusicgroup.com</a>
+            </div>
+            <div class="contact-email-item">
                 <span class="contact-email-label">Bookings</span>
                 <a href="mailto:bookings@torchatl.com">bookings@torchatl.com</a>
+            </div>
+            <div class="contact-email-item">
+                <span class="contact-email-label">Careers</span>
+                <a href="mailto:careers@torchmusicgroup.com">careers@torchmusicgroup.com</a>
             </div>
         </div>
         <a href="mailto:info@torchmusicgroup.com" class="contact-btn reveal reveal-delay-3">
@@ -405,7 +491,7 @@
     </div>
 </section>
 
-<!-- Footer -->
+<!-- Footer (Feature 14) -->
 <footer>
     <div class="footer-inner">
         <div class="footer-brand">
@@ -415,16 +501,16 @@
         <div class="footer-col">
             <div class="footer-col-title">Company</div>
             <a href="#about">About</a>
-            <a href="#roster">Roster</a>
+            <a href="#artists">Artists</a>
             <a href="#music">Music</a>
             <a href="#contact">Contact</a>
         </div>
         <div class="footer-col">
             <div class="footer-col-title">Ecosystem</div>
             <a href="https://torchatl.com" target="_blank">Torch ATL</a>
-            <a href="#divisions">Divisions</a>
-            <a href="#">Publishing</a>
-            <a href="#">Sync</a>
+            <a href="#sync">Sync</a>
+            <a href="#careers">Careers</a>
+            <a href="#faqs">FAQs</a>
         </div>
         <div class="footer-col">
             <div class="footer-col-title">Follow</div>
