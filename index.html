@@ -32,7 +32,7 @@
         <img src="images/tmg-gold-icon.png" alt="Torch Music Group" class="nav-logo" id="navLogo">
     </a>
     <ul class="nav-links">
-        <li><a href="#artists">Artists</a></li>
+        <li><a href="#roster">Roster</a></li>
         <li><a href="#merch">Merch</a></li>
         <li><a href="#music">Music</a></li>
         <li><a href="#studio">Studio</a></li>
@@ -55,7 +55,7 @@
 
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
-    <a href="#artists" onclick="closeMobile()">Artists</a>
+    <a href="#roster" onclick="closeMobile()">Roster</a>
     <a href="#merch" onclick="closeMobile()">Merch</a>
     <a href="#music" onclick="closeMobile()">Music</a>
     <a href="#studio" onclick="closeMobile()">Studio</a>
@@ -98,20 +98,23 @@
     </div>
 </section>
 
-<!-- Artists (Feature 2) -->
-<section class="section artists-section" id="artists">
+<!-- Roster -->
+<section class="section artists-section" id="roster">
     <div class="section-inner">
         <div class="section-label reveal">The Roster</div>
-        <h2 class="section-title reveal reveal-delay-1">Artist <span class="gold">Spotlight</span></h2>
+        <h2 class="section-title reveal reveal-delay-1">Our <span class="gold">Roster</span></h2>
         <p class="section-text reveal reveal-delay-2">Each one selected with intention, developed with discipline, and positioned for legacy.</p>
 
-        <div class="artist-strip">
+        <div class="artist-strip roster-grid">
             <div class="artist-strip-card reveal">
                 <div class="artist-strip-img has-photo">
                     <img src="images/foemob-web.jpg" alt="RNB.FOEMOB" class="artist-photo">
                 </div>
                 <div class="artist-strip-info">
                     <h3>RNB.FOEMOB</h3>
+                    <div class="roster-tags">
+                        <span class="roster-tag">Artist</span>
+                    </div>
                     <span class="artist-strip-label">Atlantic Records</span>
                     <p>Genre-bending collective redefining R&B, hip-hop, and cultural expression. Currently releasing &ldquo;The Family&rdquo; album campaign.</p>
                     <div class="artist-strip-links">
@@ -122,39 +125,21 @@
                 </div>
             </div>
             <div class="artist-strip-card reveal reveal-delay-1">
-                <div class="artist-strip-img">
-                    <img src="images/tmg-gold-icon.png" alt="DKE Author" class="artist-placeholder-icon">
+                <div class="artist-strip-img has-photo">
+                    <img src="images/dke-author-web.jpg" alt="DKE Author" class="artist-photo">
                 </div>
                 <div class="artist-strip-info">
                     <h3>DKE Author</h3>
+                    <div class="roster-tags">
+                        <span class="roster-tag">Songwriter</span>
+                        <span class="roster-tag">Artist</span>
+                    </div>
                     <span class="artist-strip-label">Torch Music Group</span>
                     <p>Building a catalog rooted in authenticity, lyrical depth, and deliberate creative direction.</p>
                     <div class="artist-strip-links">
                         <a href="#" class="artist-link">Spotify</a>
                         <a href="#" class="artist-link">Apple Music</a>
                     </div>
-                </div>
-            </div>
-            <div class="artist-strip-card reveal reveal-delay-2">
-                <div class="artist-strip-img">
-                    <img src="images/tmg-gold-icon.png" alt="Oliver Cole" class="artist-placeholder-icon">
-                </div>
-                <div class="artist-strip-info">
-                    <h3>Oliver Cole</h3>
-                    <span class="artist-strip-label">TMG AI Artists</span>
-                    <p>Pop Soul and Neo-Soul. Warm, organic production with emotional authenticity at the intersection of soul and Americana.</p>
-                    <div class="artist-strip-links">
-                        <a href="#" class="artist-link">Listen</a>
-                    </div>
-                </div>
-            </div>
-            <div class="artist-strip-card artist-coming-soon reveal reveal-delay-3">
-                <div class="artist-strip-img">
-                    <img src="images/tmg-gold-icon.png" alt="Coming Soon" class="artist-placeholder-icon" style="opacity:0.2">
-                </div>
-                <div class="artist-strip-info">
-                    <h3>More Artists Coming</h3>
-                    <span class="artist-strip-label">2026</span>
                 </div>
             </div>
         </div>
@@ -269,15 +254,8 @@
 <!-- Studio / Booking (Feature 6) -->
 <section class="section studio" id="studio">
     <div class="studio-inner">
-        <div class="studio-visual reveal">
-            <svg class="studio-badge" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="100" cy="100" r="90" stroke="#D4AF37" stroke-width="1" opacity="0.3"/>
-                <circle cx="100" cy="100" r="80" stroke="#D4AF37" stroke-width="0.5" opacity="0.2"/>
-                <path d="M100 40C100 40 82 60 82 74C82 83.941 90.059 92 100 92C109.941 92 118 83.941 118 74C118 60 100 40 100 40Z" fill="#D4AF37" opacity="0.3"/>
-                <rect x="95" y="90" width="10" height="40" fill="#D4AF37" opacity="0.2"/>
-                <rect x="84" y="128" width="32" height="6" rx="2" fill="#D4AF37" opacity="0.2"/>
-                <text x="100" y="160" font-family="serif" font-size="9" fill="#D4AF37" text-anchor="middle" letter-spacing="4" opacity="0.4">TORCH ATL</text>
-            </svg>
+        <div class="studio-visual reveal studio-has-photo">
+            <img src="images/torch-atl-studio.jpg" alt="Torch ATL Studio" class="studio-photo">
         </div>
         <div>
             <div class="section-label reveal">The Space</div>
@@ -459,7 +437,7 @@
 <section class="section contact" id="contact">
     <div class="contact-inner">
         <div class="section-label reveal">Connect</div>
-        <h2 class="contact-title reveal reveal-delay-1">This Is Not for<br><span class="gold">Everyone</span></h2>
+        <h2 class="contact-title reveal reveal-delay-1">Become<br><span class="gold">The Fire</span></h2>
         <p class="contact-text reveal reveal-delay-2">
             If you&rsquo;re building something real &mdash; something intentional, something that lasts &mdash; we want to hear from you.
         </p>
@@ -501,7 +479,7 @@
         <div class="footer-col">
             <div class="footer-col-title">Company</div>
             <a href="#about">About</a>
-            <a href="#artists">Artists</a>
+            <a href="#roster">Roster</a>
             <a href="#music">Music</a>
             <a href="#contact">Contact</a>
         </div>

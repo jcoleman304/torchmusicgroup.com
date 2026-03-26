@@ -806,6 +806,28 @@ nav.scrolled .nav-logo {
     opacity: 0.15;
 }
 
+.studio-has-photo {
+    background: none !important;
+    border: none !important;
+}
+
+.studio-has-photo::before {
+    display: none;
+}
+
+.studio-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.85);
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.studio-visual:hover .studio-photo {
+    filter: brightness(0.95);
+    transform: scale(1.03);
+}
+
 .studio-features {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1142,8 +1164,20 @@ footer {
 /* ── Artist Strip (Feature 2) ── */
 
 .artists-section {
-    background: var(--grey-dark);
-    border-top: 1px solid rgba(212, 175, 55, 0.08);
+    background: var(--white);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.artists-section .section-label {
+    color: var(--gold-dark);
+}
+
+.artists-section .section-title {
+    color: var(--black);
+}
+
+.artists-section .section-text {
+    color: #333;
 }
 
 .artist-strip {
@@ -1154,15 +1188,16 @@ footer {
 }
 
 .artist-strip-card {
-    background: var(--grey-mid);
-    border: 1px solid rgba(212, 175, 55, 0.06);
+    background: var(--off-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     padding: 0;
     transition: all 0.4s ease;
     overflow: hidden;
 }
 
 .artist-strip-card:hover {
-    border-color: rgba(212, 175, 55, 0.2);
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .artist-strip-img {
@@ -1209,7 +1244,7 @@ footer {
 .artist-strip-info h3 {
     font-family: var(--serif);
     font-size: 20px;
-    color: var(--gold);
+    color: var(--black);
     margin-bottom: 4px;
 }
 
@@ -1218,7 +1253,7 @@ footer {
     font-size: 9px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--gold-dark);
     font-weight: 600;
     display: block;
     margin-bottom: 12px;
@@ -1227,8 +1262,8 @@ footer {
 .artist-strip-info p {
     font-family: var(--sans);
     font-size: 13px;
-    color: var(--gold);
-    opacity: 0.7;
+    color: #444;
+    opacity: 1;
     line-height: 1.6;
     font-weight: 300;
     margin-bottom: 16px;
@@ -1245,8 +1280,8 @@ footer {
     font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--gold);
-    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: var(--gold-dark);
+    border: 1px solid var(--gold);
     padding: 6px 14px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -1262,11 +1297,51 @@ footer {
     opacity: 0.5;
 }
 
+/* ── Roster Grid & Tags ── */
+
+.roster-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.roster-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.roster-tag {
+    font-family: var(--sans);
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--black);
+    background: var(--gold);
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+
 /* ── Sync (Feature 5) ── */
 
 .sync-section {
-    background: var(--grey-dark);
-    border-top: 1px solid rgba(212, 175, 55, 0.08);
+    background: var(--off-white);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.sync-section .section-label {
+    color: var(--gold-dark);
+}
+
+.sync-section .section-title {
+    color: var(--black);
+}
+
+.sync-section .section-text {
+    color: #333;
 }
 
 .sync-grid {
@@ -1279,13 +1354,14 @@ footer {
 .sync-category {
     text-align: center;
     padding: 40px 24px;
-    border: 1px solid rgba(212, 175, 55, 0.08);
-    background: var(--grey-mid);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: var(--white);
     transition: all 0.4s ease;
 }
 
 .sync-category:hover {
-    border-color: rgba(212, 175, 55, 0.2);
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 }
 
 .sync-icon {
@@ -1295,15 +1371,15 @@ footer {
 .sync-category h3 {
     font-family: var(--serif);
     font-size: 18px;
-    color: var(--gold);
+    color: var(--black);
     margin-bottom: 8px;
 }
 
 .sync-category p {
     font-family: var(--sans);
     font-size: 13px;
-    color: var(--gold);
-    opacity: 0.7;
+    color: #444;
+    opacity: 1;
     line-height: 1.6;
     font-weight: 300;
 }
@@ -1318,9 +1394,9 @@ footer {
 .sync-cta p {
     font-family: var(--sans);
     font-size: 15px;
-    color: var(--gold);
+    color: #333;
     margin-bottom: 24px;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 /* ── Music Embeds (Feature 7) ── */
@@ -1387,8 +1463,20 @@ footer {
 /* ── Careers (Feature 11) ── */
 
 .careers-section {
-    background: var(--black);
-    border-top: 1px solid rgba(212, 175, 55, 0.08);
+    background: var(--white);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.careers-section .section-label {
+    color: var(--gold-dark);
+}
+
+.careers-section .section-title {
+    color: var(--black);
+}
+
+.careers-section .section-text {
+    color: #333;
 }
 
 .careers-grid {
@@ -1399,8 +1487,8 @@ footer {
 }
 
 .career-card {
-    background: var(--grey-mid);
-    border: 1px solid rgba(212, 175, 55, 0.06);
+    background: var(--off-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     padding: 40px;
     transition: all 0.4s ease;
     position: relative;
@@ -1422,13 +1510,14 @@ footer {
 }
 
 .career-card:hover {
-    border-color: rgba(212, 175, 55, 0.15);
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .career-card h3 {
     font-family: var(--serif);
     font-size: 22px;
-    color: var(--gold);
+    color: var(--black);
     margin-bottom: 8px;
 }
 
@@ -1437,18 +1526,18 @@ footer {
     font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--gold-dark);
     font-weight: 500;
     display: block;
     margin-bottom: 16px;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .career-card p {
     font-family: var(--sans);
     font-size: 14px;
-    color: var(--gold);
-    opacity: 0.7;
+    color: #444;
+    opacity: 1;
     line-height: 1.7;
     font-weight: 300;
     margin-bottom: 24px;
@@ -1459,7 +1548,7 @@ footer {
     font-size: 10px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--gold-dark);
     border: 1px solid var(--gold);
     padding: 10px 24px;
     text-decoration: none;
@@ -1476,23 +1565,31 @@ footer {
 .careers-note {
     font-family: var(--sans);
     font-size: 14px;
-    color: var(--gold);
-    opacity: 0.7;
+    color: #555;
+    opacity: 1;
     text-align: center;
     margin-top: 40px;
     font-weight: 300;
 }
 
 .careers-note a {
-    color: var(--gold);
+    color: var(--gold-dark);
     text-decoration: underline;
 }
 
 /* ── FAQs (Feature 12) ── */
 
 .faqs-section {
-    background: var(--grey-dark);
-    border-top: 1px solid rgba(212, 175, 55, 0.08);
+    background: var(--off-white);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.faqs-section .section-label {
+    color: var(--gold-dark);
+}
+
+.faqs-section .section-title {
+    color: var(--black);
 }
 
 .faq-list {
@@ -1509,15 +1606,15 @@ footer {
     font-size: 10px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--gold-dark);
     font-weight: 600;
     margin-bottom: 16px;
     padding-bottom: 12px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .faq-item {
-    border-bottom: 1px solid rgba(212, 175, 55, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .faq-question {
@@ -1527,7 +1624,7 @@ footer {
     padding: 20px 0;
     font-family: var(--serif);
     font-size: 17px;
-    color: var(--gold);
+    color: var(--black);
     text-align: left;
     cursor: pointer;
     display: flex;
@@ -1544,7 +1641,7 @@ footer {
     font-family: var(--sans);
     font-size: 20px;
     font-weight: 300;
-    color: var(--gold);
+    color: var(--gold-dark);
     transition: transform 0.3s ease;
     flex-shrink: 0;
     margin-left: 16px;
@@ -1564,24 +1661,32 @@ footer {
 .faq-answer p {
     font-family: var(--sans);
     font-size: 14px;
-    color: var(--gold);
-    opacity: 0.7;
+    color: #444;
+    opacity: 1;
     line-height: 1.8;
     font-weight: 300;
 }
 
 .faq-answer a {
-    color: var(--gold);
+    color: var(--gold-dark);
     text-decoration: underline;
 }
 
 /* ── Subscribe (Feature 8) ── */
 
 .subscribe-section {
-    background: var(--black);
-    border-top: 1px solid rgba(212, 175, 55, 0.08);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+    background: var(--off-white);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     text-align: center;
+}
+
+.subscribe-section .section-title {
+    color: var(--black);
+}
+
+.subscribe-section .section-text {
+    color: #333;
 }
 
 .subscribe-inner {
@@ -1599,10 +1704,10 @@ footer {
 .subscribe-form input {
     flex: 1;
     padding: 16px 20px;
-    background: var(--grey-mid);
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-right: none;
-    color: var(--gold);
+    color: var(--black);
     font-family: var(--sans);
     font-size: 14px;
     outline: none;
@@ -1610,8 +1715,8 @@ footer {
 }
 
 .subscribe-form input::placeholder {
-    color: var(--gold);
-    opacity: 0.4;
+    color: #999;
+    opacity: 1;
 }
 
 .subscribe-form input:focus {
@@ -1649,6 +1754,7 @@ footer {
 
 @media (max-width: 1024px) {
     .artist-strip { grid-template-columns: repeat(2, 1fr); }
+    .roster-grid { grid-template-columns: repeat(2, 1fr) !important; }
     .sync-grid { grid-template-columns: repeat(2, 1fr); }
     .careers-grid { grid-template-columns: 1fr; }
     .embed-placeholder { grid-template-columns: 1fr; }
@@ -1667,6 +1773,7 @@ footer {
     .section { padding: 64px 24px; }
     .roster-grid { grid-template-columns: 1fr; }
     .artist-strip { grid-template-columns: 1fr; }
+    .roster-grid { grid-template-columns: 1fr !important; }
     .sync-grid { grid-template-columns: 1fr; }
     .music-grid { grid-template-columns: 1fr 1fr; }
     .studio-features { grid-template-columns: 1fr; }
