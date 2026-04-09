@@ -306,9 +306,9 @@ nav.scrolled .nav-logo {
 
 .hero-headline {
     font-family: var(--serif);
-    font-size: clamp(32px, 5vw, 72px);
+    font-size: clamp(28px, 4vw, 56px);
     font-weight: 400;
-    line-height: 1.15;
+    line-height: 1.2;
     color: var(--gold);
     margin-bottom: 24px;
     opacity: 0;
@@ -317,19 +317,20 @@ nav.scrolled .nav-logo {
 
 .hero-subtitle {
     font-family: var(--sans);
-    font-size: clamp(12px, 1.2vw, 16px);
-    letter-spacing: 4px;
+    font-size: clamp(11px, 1vw, 14px);
+    letter-spacing: 5px;
     text-transform: uppercase;
     color: var(--gold);
     font-weight: 300;
     opacity: 0;
+    margin-top: 8px;
     animation: heroReveal 1.2s ease 0.8s forwards;
 }
 
 .hero-ctas {
     margin-top: 48px;
     display: flex;
-    gap: 24px;
+    gap: 32px;
     justify-content: center;
     align-items: center;
     opacity: 0;
