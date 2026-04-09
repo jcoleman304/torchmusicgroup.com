@@ -32,7 +32,7 @@ function animateRing() {
 animateRing();
 
 // Enlarge cursor on hover over interactive elements
-document.querySelectorAll('a, button, .roster-card, .music-card, .division-card').forEach(el => {
+document.querySelectorAll('a, button, .artist-strip-card').forEach(el => {
     el.addEventListener('mouseenter', () => {
         ring.style.width = '60px';
         ring.style.height = '60px';
@@ -134,7 +134,7 @@ function toggleFaq(btn) {
 
     if (!isOpen) {
         answer.classList.add('open');
-        toggle.textContent = '−';
+        toggle.textContent = '\u2212';
     }
 }
 

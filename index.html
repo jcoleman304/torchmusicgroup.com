@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Torch Music Group — Built for Legacy</title>
-    <meta name="description" content="Torch Music Group builds legacy-driven artists, creates culture-shifting music, and establishes a self-sustaining ecosystem rooted in ownership, excellence, and influence.">
-    <meta property="og:title" content="Torch Music Group — Built for Legacy">
-    <meta property="og:description" content="We don't chase moments. We build what lasts.">
+    <title>Torch Music Group — Only Trustworthy Bearers Carry the Torch</title>
+    <meta name="description" content="Torch Music Group is a vertically integrated music company. Artist development, publishing, and premium creative infrastructure. Earned. Never given.">
+    <meta property="og:title" content="Torch Music Group — Only Trustworthy Bearers Carry the Torch">
+    <meta property="og:description" content="Artist Development. Publishing. Premium Creative Infrastructure.">
     <meta property="og:image" content="images/tmg-gold-icon.png">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/png" href="images/tmg-gold-icon.png">
@@ -32,10 +32,11 @@
         <img src="images/tmg-gold-icon.png" alt="Torch Music Group" class="nav-logo" id="navLogo">
     </a>
     <ul class="nav-links">
+        <li><a href="#about">About</a></li>
         <li><a href="#roster">Roster</a></li>
         <li><a href="#merch">Merch</a></li>
         <li><a href="#music">Music</a></li>
-        <li><a href="#studio">Studio</a></li>
+        <li><a href="#torch-atl">Torch ATL</a></li>
         <li><a href="#careers">Careers</a></li>
         <li><a href="#faqs">FAQs</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -44,8 +45,8 @@
         <a href="#" aria-label="Instagram">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
         </a>
-        <a href="#" aria-label="YouTube">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="currentColor" stroke="none"/></svg>
+        <a href="#" aria-label="X">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.4L20 4h-2l-5.2 6.4L8 4H4z"/></svg>
         </a>
     </div>
     <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
@@ -55,10 +56,11 @@
 
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
     <a href="#roster" onclick="closeMobile()">Roster</a>
     <a href="#merch" onclick="closeMobile()">Merch</a>
     <a href="#music" onclick="closeMobile()">Music</a>
-    <a href="#studio" onclick="closeMobile()">Studio</a>
+    <a href="#torch-atl" onclick="closeMobile()">Torch ATL</a>
     <a href="#careers" onclick="closeMobile()">Careers</a>
     <a href="#faqs" onclick="closeMobile()">FAQs</a>
     <a href="#contact" onclick="closeMobile()">Contact</a>
@@ -71,6 +73,12 @@
     <div class="hero-particles" id="particles"></div>
     <div class="hero-content">
         <img src="images/tmg-logo.png" alt="Torch Music Group" class="hero-logo-main">
+        <h1 class="hero-headline">Only Trustworthy Bearers<br>Carry the Torch.</h1>
+        <p class="hero-subtitle">Artist Development. Publishing. Premium Creative Infrastructure.</p>
+        <div class="hero-ctas">
+            <a href="#roster" class="hero-btn-primary">Explore the Roster</a>
+            <a href="#about" class="hero-btn-secondary">Learn More</a>
+        </div>
     </div>
     <div class="hero-scroll">
         <span>Explore</span>
@@ -78,22 +86,93 @@
     </div>
 </section>
 
-<!-- About / Mission -->
-<section class="section about" id="about">
-    <div class="about-left">
-        <div class="section-label reveal">The Vision</div>
-        <h2 class="section-title reveal reveal-delay-1">Where Luxury<br>Meets <span class="gold">Culture</span></h2>
-        <div class="gold-divider reveal reveal-delay-2"></div>
-        <p class="section-text reveal reveal-delay-2">
-            Torch Music Group exists to build legacy-driven artists, create culture-shifting music, and establish a self-sustaining ecosystem rooted in ownership, excellence, and influence.
-        </p>
-        <p class="section-text reveal reveal-delay-3" style="margin-top:20px;">
-            We are not a volume company. We are a standard. Every artist, every record, every move &mdash; intentional, precise, and built to last beyond the moment.
-        </p>
+<!-- Brief Intro Block -->
+<section class="section intro-block">
+    <div class="section-inner intro-inner">
+        <p class="intro-text reveal">Torch Music Group is a vertically integrated music company built on the belief that greatness is earned, not given. We develop artists and build careers designed to last.</p>
     </div>
-    <div class="about-right reveal reveal-delay-3">
-        <div class="manifesto-line">
-            &ldquo;We don&rsquo;t chase moments. We build what lasts.&rdquo;
+</section>
+
+<!-- Featured Artists -->
+<section class="section featured-artists" id="featured-artists">
+    <div class="section-inner">
+        <div class="artist-strip roster-grid">
+            <div class="artist-strip-card reveal">
+                <div class="artist-strip-img has-photo">
+                    <img src="images/foemob-web.jpg" alt="RNB.FOEMOB" class="artist-photo">
+                </div>
+                <div class="artist-strip-info">
+                    <h3>RNB.FOEMOB</h3>
+                </div>
+            </div>
+            <div class="artist-strip-card reveal reveal-delay-1">
+                <div class="artist-strip-img has-photo">
+                    <img src="images/dke-author-web.jpg" alt="DKE Author" class="artist-photo">
+                </div>
+                <div class="artist-strip-info">
+                    <h3>DKE Author</h3>
+                </div>
+            </div>
+        </div>
+        <div class="featured-link reveal reveal-delay-2">
+            <a href="#roster" class="arrow-link">Meet the Roster &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<!-- Torch ATL Teaser -->
+<section class="section torch-atl-teaser">
+    <div class="torch-atl-teaser-inner">
+        <div class="teaser-image reveal">
+            <img src="images/torch-atl-studio.jpg" alt="Torch ATL Estate" class="teaser-photo">
+        </div>
+        <div class="teaser-content">
+            <h2 class="teaser-headline reveal">Where Comfort Ignites Creativity.</h2>
+            <p class="teaser-text reveal reveal-delay-1">A private recording estate in Atlanta where artists and creatives feel at home.</p>
+            <a href="#torch-atl" class="arrow-link reveal reveal-delay-2">Explore Torch ATL &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<!-- Closing Strip -->
+<section class="closing-strip">
+    <p class="closing-text reveal">Some people fear the fire. Others simply become it.</p>
+</section>
+
+<!-- About -->
+<section class="section about-page" id="about">
+    <div class="section-inner">
+        <div class="section-label reveal">About</div>
+        <h2 class="section-title reveal reveal-delay-1">Earned. Never <span class="gold">Given.</span></h2>
+        <div class="gold-divider reveal reveal-delay-2"></div>
+
+        <div class="about-copy">
+            <p class="section-text reveal reveal-delay-2">Torch Music Group was founded on a simple conviction: the people who built this industry held themselves to a standard that most of the business has abandoned. They studied the craft. They showed up every day. They treated greatness as a discipline, not a destination.</p>
+            <p class="section-text reveal reveal-delay-2">TMG exists to carry that standard forward. We are an artist development company, a publishing house, and a creative infrastructure built for people who are committed to the work.</p>
+            <p class="section-text reveal reveal-delay-3">We operate across management, publishing, and premium studio services through a vertically integrated model &mdash; because artists deserve a team that controls quality at every level.</p>
+            <p class="section-text reveal reveal-delay-3">If you&rsquo;re here, it&rsquo;s because you believe what we believe: that only trustworthy bearers carry the torch.</p>
+        </div>
+
+        <!-- What We Do -->
+        <div class="what-we-do">
+            <div class="wwd-pillar reveal">
+                <h3 class="wwd-title">Artist Development &amp; Management</h3>
+                <p class="wwd-text">Career architecture from the ground up. Creative direction, release strategy, brand building, and business education for artists who are ready to be developed &mdash; not just distributed.</p>
+            </div>
+            <div class="wwd-pillar reveal reveal-delay-1">
+                <h3 class="wwd-title">Publishing</h3>
+                <p class="wwd-text">Catalog administration, co-publishing, and songwriter development.</p>
+            </div>
+            <div class="wwd-pillar reveal reveal-delay-2">
+                <h3 class="wwd-title">Creative Infrastructure</h3>
+                <p class="wwd-text">Premium recording, A&amp;R, and operational systems designed to give every project the environment and support it deserves. Anchored by Torch ATL.</p>
+            </div>
+        </div>
+
+        <!-- Founder Note -->
+        <div class="founder-note reveal">
+            <blockquote class="founder-quote">&ldquo;There&rsquo;s no rush to greatness.&rdquo;</blockquote>
+            <cite class="founder-cite">&mdash; Joi Coleman, Founder &amp; CEO</cite>
         </div>
     </div>
 </section>
@@ -101,9 +180,7 @@
 <!-- Roster -->
 <section class="section artists-section" id="roster">
     <div class="section-inner">
-        <div class="section-label reveal">The Roster</div>
-        <h2 class="section-title reveal reveal-delay-1">Our <span class="gold">Roster</span></h2>
-        <p class="section-text reveal reveal-delay-2">Each one selected with intention, developed with discipline, and positioned for legacy.</p>
+        <h2 class="section-title reveal">The <span class="gold">Roster.</span></h2>
 
         <div class="artist-strip roster-grid">
             <div class="artist-strip-card reveal">
@@ -112,15 +189,10 @@
                 </div>
                 <div class="artist-strip-info">
                     <h3>RNB.FOEMOB</h3>
-                    <div class="roster-tags">
-                        <span class="roster-tag">Artist</span>
-                    </div>
-                    <span class="artist-strip-label">Atlantic Records</span>
-                    <p>Genre-bending collective redefining R&B, hip-hop, and cultural expression. Currently releasing &ldquo;The Family&rdquo; album campaign.</p>
+                    <p class="artist-descriptor">Genre-bending collective redefining R&amp;B, hip-hop, and cultural expression.</p>
                     <div class="artist-strip-links">
-                        <a href="#" class="artist-link">Spotify</a>
-                        <a href="#" class="artist-link">Apple Music</a>
-                        <a href="#" class="artist-link">Instagram</a>
+                        <a href="#" class="artist-link">Listen</a>
+                        <a href="#" class="artist-link">Follow</a>
                     </div>
                 </div>
             </div>
@@ -130,18 +202,18 @@
                 </div>
                 <div class="artist-strip-info">
                     <h3>DKE Author</h3>
-                    <div class="roster-tags">
-                        <span class="roster-tag">Songwriter</span>
-                        <span class="roster-tag">Artist</span>
-                    </div>
-                    <span class="artist-strip-label">Torch Music Group</span>
-                    <p>Building a catalog rooted in authenticity, lyrical depth, and deliberate creative direction.</p>
+                    <p class="artist-descriptor">Lyrical depth, authenticity, and deliberate creative direction.</p>
                     <div class="artist-strip-links">
-                        <a href="#" class="artist-link">Spotify</a>
-                        <a href="#" class="artist-link">Apple Music</a>
+                        <a href="#" class="artist-link">Listen</a>
+                        <a href="#" class="artist-link">Follow</a>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="roster-bottom reveal">
+            <p class="roster-bottom-text">Interested in working with TMG?</p>
+            <a href="#contact" class="arrow-link">Get in Touch &rarr;</a>
         </div>
     </div>
 </section>
@@ -191,7 +263,7 @@
     </div>
 </section>
 
-<!-- Music / Listen (Feature 7) -->
+<!-- Music / Listen -->
 <section class="section music" id="music">
     <div class="section-inner">
         <div class="section-label reveal">The Music</div>
@@ -251,51 +323,50 @@
     </div>
 </section>
 
-<!-- Studio / Booking (Feature 6) -->
-<section class="section studio" id="studio">
-    <div class="studio-inner">
-        <div class="studio-visual reveal studio-has-photo">
-            <img src="images/torch-atl-studio.jpg" alt="Torch ATL Studio" class="studio-photo">
+<!-- Torch ATL -->
+<section class="section torch-atl-page" id="torch-atl">
+    <div class="section-inner">
+        <div class="section-label reveal">Torch ATL</div>
+        <h2 class="section-title reveal reveal-delay-1">Record. Retreat. <span class="gold">Recharge.</span></h2>
+
+        <!-- Hero Image -->
+        <div class="torch-atl-hero reveal reveal-delay-2">
+            <img src="images/torch-atl-studio.jpg" alt="Torch ATL Estate" class="torch-atl-hero-img">
         </div>
-        <div>
-            <div class="section-label reveal">The Space</div>
-            <h2 class="section-title reveal reveal-delay-1">Torch <span class="gold">ATL</span></h2>
-            <p class="section-text reveal reveal-delay-2">
-                Atlanta&rsquo;s premier creative estate &mdash; where comfort ignites creativity.
-            </p>
-            <div class="studio-features">
-                <div class="studio-feature reveal">
-                    <div class="studio-feature-title">Recording</div>
-                    <div class="studio-feature-text">World-class recording environment with premium gear and acoustics built for excellence.</div>
-                </div>
-                <div class="studio-feature reveal reveal-delay-1">
-                    <div class="studio-feature-title">Retreat</div>
-                    <div class="studio-feature-text">Full-estate experience designed to remove distractions and elevate creative output.</div>
-                </div>
-                <div class="studio-feature reveal reveal-delay-2">
-                    <div class="studio-feature-title">Private</div>
-                    <div class="studio-feature-text">Gated, secure, and confidential. Every session is protected and every guest is vetted.</div>
-                </div>
-                <div class="studio-feature reveal reveal-delay-3">
-                    <div class="studio-feature-title">Premium</div>
-                    <div class="studio-feature-text">Luxury hospitality meets world-class studio infrastructure &mdash; the standard, not the exception.</div>
-                </div>
-            </div>
-            <div class="studio-cta-row reveal reveal-delay-4">
-                <a href="https://torchatl.com" target="_blank" class="studio-cta">
-                    Explore Torch ATL
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="mailto:bookings@torchatl.com" class="studio-cta">
-                    Book a Session
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-            </div>
+
+        <!-- Main Copy -->
+        <div class="torch-atl-copy">
+            <p class="section-text reveal">Torch ATL is a private recording estate in Atlanta designed for artists, songwriters, producers, and creative teams who need more than a studio &mdash; they need an environment. Gated, private, and built for focus.</p>
+            <p class="section-text reveal reveal-delay-1">The estate combines luxury hospitality with world-class recording infrastructure. Every detail &mdash; from the rooms to the engineering to the service &mdash; is designed to remove friction and let the music be the only priority.</p>
+            <p class="section-text reveal reveal-delay-2">This is not a studio you book by the hour. This is a creative estate built for sessions, writing camps, and projects that demand space, comfort, and excellence.</p>
+        </div>
+
+        <!-- What's Included -->
+        <div class="torch-atl-amenities">
+            <h3 class="amenities-heading reveal">What&rsquo;s Included</h3>
+            <ul class="amenities-list reveal reveal-delay-1">
+                <li>Recording suites</li>
+                <li>Private, gated estate grounds</li>
+                <li>On-site accommodations</li>
+                <li>In-house engineering available</li>
+                <li>Premium hospitality and concierge-level service</li>
+                <li>Full creative privacy</li>
+            </ul>
+        </div>
+
+        <!-- Positioning Line -->
+        <div class="positioning-strip reveal">
+            <p class="positioning-text">Where Comfort Ignites Creativity.</p>
+        </div>
+
+        <!-- CTA -->
+        <div class="torch-atl-cta reveal">
+            <a href="mailto:bookings@torchatl.com" class="contact-btn">Inquire About Availability</a>
         </div>
     </div>
 </section>
 
-<!-- Careers (Feature 11) -->
+<!-- Careers -->
 <section class="section careers-section" id="careers">
     <div class="section-inner">
         <div class="section-label reveal">Join Us</div>
@@ -327,7 +398,7 @@
     </div>
 </section>
 
-<!-- FAQs (Feature 12) -->
+<!-- FAQs -->
 <section class="section faqs-section" id="faqs">
     <div class="section-inner">
         <div class="section-label reveal">Information</div>
@@ -421,7 +492,7 @@
     </div>
 </section>
 
-<!-- Newsletter Subscribe (Feature 8) -->
+<!-- Newsletter Subscribe -->
 <section class="section subscribe-section" id="subscribe">
     <div class="subscribe-inner">
         <h2 class="section-title reveal">Stay <span class="gold">Connected</span></h2>
@@ -433,48 +504,38 @@
     </div>
 </section>
 
-<!-- Contact (Feature 9 footer + Contact CTA) -->
+<!-- Contact -->
 <section class="section contact" id="contact">
     <div class="contact-inner">
-        <div class="section-label reveal">Connect</div>
-        <h2 class="contact-title reveal reveal-delay-1">Become<br><span class="gold">The Fire</span></h2>
-        <p class="contact-text reveal reveal-delay-2">
-            If you&rsquo;re building something real &mdash; something intentional, something that lasts &mdash; we want to hear from you.
-        </p>
-        <div class="contact-emails reveal reveal-delay-2">
-            <div class="contact-email-item">
-                <span class="contact-email-label">General</span>
+        <h2 class="contact-title reveal">Get in <span class="gold">Touch.</span></h2>
+
+        <div class="contact-categories reveal reveal-delay-1">
+            <div class="contact-category">
+                <span class="contact-email-label">General Inquiries</span>
                 <a href="mailto:info@torchmusicgroup.com">info@torchmusicgroup.com</a>
             </div>
-            <div class="contact-email-item">
-                <span class="contact-email-label">A&R / Submissions</span>
-                <a href="mailto:ar@torchmusicgroup.com">ar@torchmusicgroup.com</a>
-            </div>
-            <div class="contact-email-item">
-                <span class="contact-email-label">Sync Licensing</span>
-                <a href="mailto:sync@torchmusicgroup.com">sync@torchmusicgroup.com</a>
-            </div>
-            <div class="contact-email-item">
-                <span class="contact-email-label">Bookings</span>
+            <div class="contact-category">
+                <span class="contact-email-label">Torch ATL &mdash; Studio Bookings</span>
                 <a href="mailto:bookings@torchatl.com">bookings@torchatl.com</a>
             </div>
-            <div class="contact-email-item">
-                <span class="contact-email-label">Careers</span>
-                <a href="mailto:careers@torchmusicgroup.com">careers@torchmusicgroup.com</a>
-            </div>
         </div>
-        <a href="mailto:info@torchmusicgroup.com" class="contact-btn reveal reveal-delay-3">
-            Get In Touch
-        </a>
+
+        <div class="contact-socials reveal reveal-delay-2">
+            <a href="#" class="social-icon" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="X / Twitter">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.4L20 4h-2l-5.2 6.4L8 4H4z"/></svg>
+            </a>
+        </div>
     </div>
 </section>
 
-<!-- Footer (Feature 14) -->
+<!-- Footer -->
 <footer>
     <div class="footer-inner">
         <div class="footer-brand">
             <img src="images/tmg-gold-icon.png" alt="Torch Music Group" class="footer-logo">
-            <p class="footer-tagline">Building legacy-driven artists, culture-shifting music, and a self-sustaining ecosystem rooted in ownership, excellence, and influence.</p>
         </div>
         <div class="footer-col">
             <div class="footer-col-title">Company</div>
@@ -499,11 +560,10 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <div class="footer-copy">&copy; 2026 Torch Music Group LLC. All Rights Reserved. &middot; Atlanta, Georgia</div>
+        <div class="footer-copy">&copy; 2026 Torch Music Group. All Rights Reserved.</div>
         <div class="footer-socials">
             <a href="#" aria-label="Instagram">IG</a>
             <a href="#" aria-label="Twitter">X</a>
-            <a href="#" aria-label="YouTube">YT</a>
         </div>
     </div>
 </footer>
