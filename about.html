@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Torch Music Group</title>
+    <meta name="description" content="Torch Music Group develops artists, builds careers designed to last, and operates as a vertically integrated music company.">
+    <meta property="og:title" content="About — Torch Music Group">
+    <meta property="og:description" content="Where talent is developed, careers are built, and legacies are made.">
+    <meta property="og:image" content="images/tmg-gold-icon.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230A0A0A' width='100' height='100' rx='12'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%23D4AF37' font-family='Georgia'>T</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="loader" id="loader">
+    <img src="images/tmg-gold-icon.png" alt="Loading" class="loader-icon">
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav id="navbar">
+    <a href="index.html">
+        <img src="images/tmg-gold-icon.png" alt="Torch Music Group" class="nav-logo" id="navLogo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="roster.html">Roster</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="https://torchatl.com" target="_blank" rel="noopener">Torch ATL</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-socials">
+        <a href="#" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="X">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.4L20 4h-2l-5.2 6.4L8 4H4z"/></svg>
+        </a>
+    </div>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="about.html" onclick="closeMobile()">About</a>
+    <a href="roster.html" onclick="closeMobile()">Roster</a>
+    <a href="merch.html" onclick="closeMobile()">Merch</a>
+    <a href="music.html" onclick="closeMobile()">Music</a>
+    <a href="https://torchatl.com" target="_blank" rel="noopener">Torch ATL</a>
+    <a href="careers.html" onclick="closeMobile()">Careers</a>
+    <a href="faqs.html" onclick="closeMobile()">FAQs</a>
+    <a href="contact.html" onclick="closeMobile()">Contact</a>
+</div>
+
+<section class="section about-page">
+    <div class="section-inner">
+        <div class="section-label reveal">About</div>
+        <div class="gold-divider reveal reveal-delay-1"></div>
+
+        <div class="about-copy">
+            <p class="section-text reveal reveal-delay-2">Torch Music Group was founded on a simple conviction: the people who built this industry held themselves to a standard that most of the business has abandoned. They studied the craft. They showed up every day. They treated greatness as a discipline, not a destination.</p>
+            <p class="section-text reveal reveal-delay-2">TMG exists to carry that standard forward. We are an artist development company, a publishing house, and a creative infrastructure built for people who are committed to the work.</p>
+            <p class="section-text reveal reveal-delay-3">We operate across management, publishing, and premium studio services through a vertically integrated model &mdash; because artists deserve a team that controls quality at every level.</p>
+            <p class="section-text reveal reveal-delay-3">If you&rsquo;re here, it&rsquo;s because you believe what we believe: that only trustworthy bearers carry the torch.</p>
+        </div>
+
+        <div class="what-we-do">
+            <div class="wwd-pillar reveal">
+                <h3 class="wwd-title">Artist Development &amp; Management</h3>
+                <p class="wwd-text">Career architecture from the ground up. Creative direction, release strategy, brand building, and business education for artists who are ready to be developed &mdash; not just distributed.</p>
+            </div>
+            <div class="wwd-pillar reveal reveal-delay-1">
+                <h3 class="wwd-title">Publishing</h3>
+                <p class="wwd-text">Catalog administration, co-publishing, and songwriter development.</p>
+            </div>
+            <div class="wwd-pillar reveal reveal-delay-2">
+                <h3 class="wwd-title">Creative Infrastructure</h3>
+                <p class="wwd-text">Premium recording, A&amp;R, and operational systems designed to give every project the environment and support it deserves. Anchored by Torch ATL.</p>
+            </div>
+        </div>
+
+        <div class="founder-note reveal">
+            <blockquote class="founder-quote">&ldquo;There&rsquo;s no rush to greatness.&rdquo;</blockquote>
+            <cite class="founder-cite">&mdash; Joi Coleman, Founder &amp; CEO</cite>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img src="images/tmg-gold-icon.png" alt="Torch Music Group" class="footer-logo">
+        </div>
+        <div class="footer-col">
+            <div class="footer-col-title">Company</div>
+            <a href="about.html">About</a>
+            <a href="roster.html">Roster</a>
+            <a href="music.html">Music</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <div class="footer-col-title">Ecosystem</div>
+            <a href="https://torchatl.com" target="_blank" rel="noopener">Torch ATL</a>
+            <a href="merch.html">Merch</a>
+            <a href="careers.html">Careers</a>
+            <a href="faqs.html">FAQs</a>
+        </div>
+        <div class="footer-col">
+            <div class="footer-col-title">Follow</div>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter / X</a>
+            <a href="#">YouTube</a>
+            <a href="#">Spotify</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2026 Torch Music Group. All Rights Reserved.</div>
+        <div class="footer-socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">X</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music — Torch Music Group</title>
+    <meta name="description" content="Latest releases from the Torch Music Group roster — RNB.FOEMOB, DKE Author, and TMG-credited placements.">
+    <meta property="og:title" content="Music — Torch Music Group">
+    <meta property="og:description" content="Every record that carries Torch fingerprints is held to the same standard.">
+    <meta property="og:image" content="images/tmg-gold-icon.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230A0A0A' width='100' height='100' rx='12'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%23D4AF37' font-family='Georgia'>T</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="loader" id="loader">
+    <img src="images/tmg-gold-icon.png" alt="Loading" class="loader-icon">
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav id="navbar">
+    <a href="index.html">
+        <img src="images/tmg-gold-icon.png" alt="Torch Music Group" class="nav-logo" id="navLogo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="roster.html">Roster</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="https://torchatl.com" target="_blank" rel="noopener">Torch ATL</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-socials">
+        <a href="#" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="X">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.4L20 4h-2l-5.2 6.4L8 4H4z"/></svg>
+        </a>
+    </div>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="about.html" onclick="closeMobile()">About</a>
+    <a href="roster.html" onclick="closeMobile()">Roster</a>
+    <a href="merch.html" onclick="closeMobile()">Merch</a>
+    <a href="music.html" onclick="closeMobile()">Music</a>
+    <a href="https://torchatl.com" target="_blank" rel="noopener">Torch ATL</a>
+    <a href="careers.html" onclick="closeMobile()">Careers</a>
+    <a href="faqs.html" onclick="closeMobile()">FAQs</a>
+    <a href="contact.html" onclick="closeMobile()">Contact</a>
+</div>
+
+<section class="section music">
+    <div class="section-inner">
+        <div class="section-label reveal">The Music</div>
+        <h2 class="section-title reveal reveal-delay-1">Latest <span class="gold">Releases</span></h2>
+        <p class="section-text reveal reveal-delay-2">Every record that carries Torch fingerprints is held to the same standard &mdash; intentional, precise, and built for impact.</p>
+
+        <div class="music-grid" id="releases-grid"></div>
+
+        <div class="music-embeds reveal">
+            <h3 class="embed-heading">Listen Now</h3>
+            <p class="embed-sub">Subscribe and follow Torch Music Group artists across all platforms.</p>
+            <div class="embed-placeholder">
+                <div class="embed-box">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="#D4AF37" opacity="0.5"/></svg>
+                    <span>YouTube Playlist</span>
+                    <span class="embed-note">Embed your artist videos here</span>
+                </div>
+                <div class="embed-box">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="#D4AF37" opacity="0.5"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                    <span>Spotify Playlist</span>
+                    <span class="embed-note">Embed your Spotify playlist here</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img src="images/tmg-gold-icon.png" alt="Torch Music Group" class="footer-logo">
+        </div>
+        <div class="footer-col">
+            <div class="footer-col-title">Company</div>
+            <a href="about.html">About</a>
+            <a href="roster.html">Roster</a>
+            <a href="music.html">Music</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <div class="footer-col-title">Ecosystem</div>
+            <a href="https://torchatl.com" target="_blank" rel="noopener">Torch ATL</a>
+            <a href="merch.html">Merch</a>
+            <a href="careers.html">Careers</a>
+            <a href="faqs.html">FAQs</a>
+        </div>
+        <div class="footer-col">
+            <div class="footer-col-title">Follow</div>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter / X</a>
+            <a href="#">YouTube</a>
+            <a href="#">Spotify</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2026 Torch Music Group. All Rights Reserved.</div>
+        <div class="footer-socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">X</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
