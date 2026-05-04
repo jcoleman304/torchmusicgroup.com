@@ -26,7 +26,7 @@ async function getToken() {
 }
 
 async function fetchAlbums(token) {
-    const url = `https://api.spotify.com/v1/artists/${FOEMOB_ARTIST_ID}/albums?include_groups=single,album&market=US&limit=20`;
+    const url = `https://api.spotify.com/v1/artists/${FOEMOB_ARTIST_ID}/albums?include_groups=single,album&market=US&limit=10`;
     const res = await fetch(url, { headers: { 'Authorization': `Bearer ${token}` } });
     if (!res.ok) throw new Error(`Albums request failed: ${res.status} ${await res.text()}`);
     const data = await res.json();
