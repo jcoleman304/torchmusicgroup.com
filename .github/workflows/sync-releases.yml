@@ -14,10 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Sync FOEMOB releases from Spotify
+      - name: Sync roster releases from Spotify
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          ROSTER_ARTIST_IDS: ${{ secrets.ROSTER_ARTIST_IDS }}
           FOEMOB_ARTIST_ID: ${{ secrets.FOEMOB_ARTIST_ID }}
         run: |
           node .github/workflows/sync-releases.mjs
@@ -28,7 +29,7 @@ jobs:
             git config user.name "torch-bot"
             git config user.email "bot@torchmusicgroup.com"
             git add releases.json
-            git commit -m "chore: sync FOEMOB releases from Spotify"
+            git commit -m "chore: sync roster releases from Spotify"
             git push
           else
             echo "No changes to commit"
