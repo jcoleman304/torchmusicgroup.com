@@ -105,7 +105,9 @@ const releases = all
     .slice(0, 9);
 
 const json = JSON.parse(readFileSync('releases.json', 'utf8'));
+// Only touch the auto-synced array — preserve manual_releases as-is
 json.releases = releases;
+json.manual_releases = json.manual_releases || [];
 delete json.foe_releases;
 delete json.dke_placements;
 json.last_updated = new Date().toISOString();

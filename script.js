@@ -130,9 +130,14 @@ async function loadReleases() {
         if (!res.ok) throw new Error('Failed to load releases.json');
         const data = await res.json();
 
-        // Support both new flat schema (releases) and legacy schema (foe_releases + dke_placements)
-        const items = data.releases
-            || [...(data.foe_releases || []), ...(data.dke_placements || [])];
+        // Merge auto-synced releases + hand-curated manual_releases (placements, features, etc.)
+        const items = [
+            ...(data.releases || []),
+            ...(data.manual_releases || []),
+            // Legacy schema fallback
+            ...(data.foe_releases || []),
+            ...(data.dke_placements || []),
+        ];
         const sorted = items
             .slice()
             .sort((a, b) => (b.release_date || '').localeCompare(a.release_date || ''));

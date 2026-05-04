@@ -100,5 +100,19 @@
       "apple_url": null,
       "subtitle": "Album"
     }
+  ],
+  "manual_releases": [
+    {
+      "id": "put-it-on-da-floor-again",
+      "title": "Put It On Da Floor Again (feat. Cardi B)",
+      "artist": "Latto",
+      "writers": "DKE Author",
+      "type": "single",
+      "release_date": "2023-06-02",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2734b9f1fe8e25964302c5752b2",
+      "spotify_url": "https://open.spotify.com/track/6c6WmIHcHlhccEwSFBhzNa",
+      "apple_url": null,
+      "subtitle": null
+    }
   ]
 }
