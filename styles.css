@@ -1010,6 +1010,44 @@ nav.scrolled .nav-logo {
     opacity: 0.7;
 }
 
+a.music-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.music-cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.releases-subhead {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.7;
+    margin-top: 60px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.releases-subhead + .music-grid {
+    margin-top: 24px;
+}
+
+.releases-empty {
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--gold);
+    opacity: 0.5;
+    letter-spacing: 1px;
+    padding: 40px 0;
+}
+
 /* ── Music Embeds ── */
 
 .music-embeds {

@@ -1,0 +1,39 @@
+{
+  "last_updated": "2026-05-03T00:00:00Z",
+  "foe_releases": [
+    {
+      "id": "that-dude",
+      "title": "That Dude (feat. STL Von)",
+      "artist": "RNB.FOEMOB",
+      "type": "single",
+      "release_date": "2026-03-24",
+      "cover_url": null,
+      "spotify_url": null,
+      "apple_url": null,
+      "subtitle": null
+    },
+    {
+      "id": "come-up",
+      "title": "Come Up (feat. Headhuncho Amir)",
+      "artist": "RNB.FOEMOB",
+      "type": "single",
+      "release_date": "2026-04-07",
+      "cover_url": null,
+      "spotify_url": null,
+      "apple_url": null,
+      "subtitle": null
+    },
+    {
+      "id": "the-family",
+      "title": "The Family",
+      "artist": "RNB.FOEMOB",
+      "type": "album",
+      "release_date": "2026-06-19",
+      "cover_url": null,
+      "spotify_url": null,
+      "apple_url": null,
+      "subtitle": "Album Coming Soon"
+    }
+  ],
+  "dke_placements": []
+}
