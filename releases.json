@@ -103,10 +103,22 @@
   ],
   "manual_releases": [
     {
+      "id": "he-want-him-a-me",
+      "title": "He Want Him a Me",
+      "artist": "Mello Buckzz",
+      "writers": "PutMeOnDK",
+      "type": "single",
+      "release_date": "2026-03-26",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27392bea5f089948ba3cda9f342",
+      "spotify_url": "https://open.spotify.com/album/7KeBnPlGjzBMOz7X2QxyOa",
+      "apple_url": null,
+      "subtitle": null
+    },
+    {
       "id": "put-it-on-da-floor-again",
       "title": "Put It On Da Floor Again (feat. Cardi B)",
       "artist": "Latto",
-      "writers": "DKE Author",
+      "writers": "PutMeOnDK",
       "type": "single",
       "release_date": "2023-06-02",
       "cover_url": "https://i.scdn.co/image/ab67616d0000b2734b9f1fe8e25964302c5752b2",
