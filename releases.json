@@ -1,38 +1,71 @@
 {
-  "last_updated": "2026-05-03T00:00:00Z",
+  "last_updated": "2026-05-04T04:47:41.862Z",
   "foe_releases": [
     {
-      "id": "that-dude",
-      "title": "That Dude (feat. STL Von)",
+      "id": "4vCd6u0wy9Yt3rRSaphZ2X",
+      "title": "Big On Big",
       "artist": "RNB.FOEMOB",
       "type": "single",
-      "release_date": "2026-03-24",
-      "cover_url": null,
-      "spotify_url": null,
+      "release_date": "2026-04-29",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735c93beaad049f8d604392c5f",
+      "spotify_url": "https://open.spotify.com/album/4vCd6u0wy9Yt3rRSaphZ2X",
       "apple_url": null,
       "subtitle": null
     },
     {
-      "id": "come-up",
+      "id": "6ekc7eZD0wF7ckuQgIevEJ",
       "title": "Come Up (feat. Headhuncho Amir)",
       "artist": "RNB.FOEMOB",
       "type": "single",
       "release_date": "2026-04-07",
-      "cover_url": null,
-      "spotify_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735774123a80d43dec88405e8e",
+      "spotify_url": "https://open.spotify.com/album/6ekc7eZD0wF7ckuQgIevEJ",
       "apple_url": null,
       "subtitle": null
     },
     {
-      "id": "the-family",
-      "title": "The Family",
+      "id": "1uXnLbiMoEW2JoMW9VwLAb",
+      "title": "That Dude (feat. STL VONN)",
+      "artist": "RNB.FOEMOB",
+      "type": "single",
+      "release_date": "2026-03-26",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735b637199176de35d73fd34ed",
+      "spotify_url": "https://open.spotify.com/album/1uXnLbiMoEW2JoMW9VwLAb",
+      "apple_url": null,
+      "subtitle": null
+    },
+    {
+      "id": "2Qn9UhVCEfHygCzFH69oP1",
+      "title": "Back 2 Back",
+      "artist": "RNB.FOEMOB",
+      "type": "single",
+      "release_date": "2026-02-27",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273effb295cbffeea2f365e56f4",
+      "spotify_url": "https://open.spotify.com/album/2Qn9UhVCEfHygCzFH69oP1",
+      "apple_url": null,
+      "subtitle": null
+    },
+    {
+      "id": "4o2LIPQQLxIW1hu6H2gFYJ",
+      "title": "Handsome, Young & Paid",
+      "artist": "RNB.FOEMOB",
+      "type": "single",
+      "release_date": "2026-02-17",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2734b3666212edb8edb39c60490",
+      "spotify_url": "https://open.spotify.com/album/4o2LIPQQLxIW1hu6H2gFYJ",
+      "apple_url": null,
+      "subtitle": null
+    },
+    {
+      "id": "3sSINn8gqgicH8GlxfkK63",
+      "title": "Square Bidnez (Swishahouse Remix)",
       "artist": "RNB.FOEMOB",
       "type": "album",
-      "release_date": "2026-06-19",
-      "cover_url": null,
-      "spotify_url": null,
+      "release_date": "2025-12-18",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732ecc9801f0213430547596ed",
+      "spotify_url": "https://open.spotify.com/album/3sSINn8gqgicH8GlxfkK63",
       "apple_url": null,
-      "subtitle": "Album Coming Soon"
+      "subtitle": "Album"
     }
   ],
   "dke_placements": []
