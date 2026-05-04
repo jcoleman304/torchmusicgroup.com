@@ -168,7 +168,7 @@ function renderReleases(container, items) {
         const link = item.spotify_url || item.apple_url || '#';
         const target = link === '#' ? '' : 'target="_blank" rel="noopener"';
 
-        const writers = item.writers ? ` · Contributed by ${item.writers}` : '';
+        const writers = item.writers ? ` · ${item.writers}` : '';
         const sub = item.subtitle
             ? `${item.artist} · ${item.subtitle}`
             : `${item.artist}${writers}`;

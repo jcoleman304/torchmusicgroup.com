@@ -103,6 +103,18 @@
   ],
   "manual_releases": [
     {
+      "id": "sapphire-moon",
+      "title": "Sapphire Moon",
+      "artist": "Andraya",
+      "writers": "PutMeOnDK",
+      "type": "single",
+      "release_date": "2026-01-12",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273d7383fe8ce4355005cd3ea8b",
+      "spotify_url": "https://open.spotify.com/track/0sDwY2CnTctlOtWyWdbTiJ",
+      "apple_url": null,
+      "subtitle": null
+    },
+    {
       "id": "he-want-him-a-me",
       "title": "He Want Him a Me",
       "artist": "Mello Buckzz",
