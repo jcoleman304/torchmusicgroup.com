@@ -243,13 +243,32 @@ nav.scrolled .nav-logo {
     overflow: hidden;
 }
 
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.65);
+    z-index: 1;
+    pointer-events: none;
+}
+
 .hero-bg {
     position: absolute;
     inset: 0;
+    z-index: 1;
     background:
-        radial-gradient(ellipse at 20% 80%, rgba(212, 175, 55, 0.06) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 20%, rgba(212, 175, 55, 0.04) 0%, transparent 50%),
-        var(--black);
+        radial-gradient(ellipse at 20% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(212, 175, 55, 0.06) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 .hero-grain {
