@@ -683,8 +683,9 @@ nav.scrolled .nav-logo {
 }
 
 .what-we-do.four-pillars {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 36px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 64px;
+    max-width: 900px;
 }
 
 .about-section-heading {
@@ -1772,7 +1773,7 @@ footer {
 @media (max-width: 1024px) {
     .section { padding: 80px 32px; }
     .what-we-do { grid-template-columns: 1fr; gap: 40px; }
-    .what-we-do.four-pillars { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+    .what-we-do.four-pillars { grid-template-columns: repeat(2, 1fr); gap: 40px 32px; }
     .torch-atl-teaser-inner { grid-template-columns: 1fr; }
     .teaser-image { aspect-ratio: 16/9; }
     .teaser-content { padding: 60px 32px; }
