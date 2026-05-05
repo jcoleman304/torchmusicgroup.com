@@ -751,6 +751,27 @@ nav.scrolled .nav-logo {
     margin-bottom: 0;
 }
 
+.about-page .about-copy .section-text,
+.about-page .wwd-text {
+    font-family: var(--sans);
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 0.01em;
+    font-weight: 300;
+    opacity: 1;
+    max-width: none;
+}
+
+.about-page .wwd-text {
+    margin-bottom: 0;
+}
+
+.about-page .about-block .about-copy .section-text:last-child {
+    margin-bottom: 0;
+}
+
 .about-intro-grid .about-copy .section-text {
     font-size: 1.05rem;
     line-height: 1.85;
