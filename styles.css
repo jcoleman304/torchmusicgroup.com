@@ -671,15 +671,40 @@ nav.scrolled .nav-logo {
     margin-bottom: 24px;
 }
 
-/* What We Do — 3 Pillars */
+/* What We Do — Pillars */
 
 .what-we-do {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 48px;
+    margin-top: 40px;
+    padding-top: 0;
+}
+
+.what-we-do.four-pillars {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+}
+
+.about-section-heading {
+    font-family: var(--serif);
+    font-size: clamp(22px, 2.4vw, 30px);
+    font-weight: 500;
+    color: var(--gold);
     margin-top: 80px;
-    padding-top: 80px;
+    padding-top: 60px;
+    padding-bottom: 8px;
     border-top: 1px solid rgba(212, 175, 55, 0.12);
+    letter-spacing: 0.02em;
+}
+
+.about-block {
+    margin-top: 0;
+}
+
+.about-block .about-copy {
+    margin-top: 24px;
+    margin-bottom: 0;
 }
 
 .wwd-pillar {
@@ -1743,6 +1768,7 @@ footer {
 @media (max-width: 1024px) {
     .section { padding: 80px 32px; }
     .what-we-do { grid-template-columns: 1fr; gap: 40px; }
+    .what-we-do.four-pillars { grid-template-columns: repeat(2, 1fr); gap: 32px; }
     .torch-atl-teaser-inner { grid-template-columns: 1fr; }
     .teaser-image { aspect-ratio: 16/9; }
     .teaser-content { padding: 60px 32px; }
@@ -1774,6 +1800,7 @@ footer {
     .torch-atl-hero { aspect-ratio: 16/9; }
     .subscribe-form { flex-direction: column; }
     .subscribe-form input { border-right: 1px solid rgba(0, 0, 0, 0.15); }
+    .what-we-do.four-pillars { grid-template-columns: 1fr; gap: 32px; }
 }
 
 @media (max-width: 480px) {
