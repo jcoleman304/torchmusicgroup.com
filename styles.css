@@ -752,32 +752,11 @@ nav.scrolled .nav-logo {
 }
 
 .about-intro-grid .about-copy .section-text {
-    font-size: 1.05rem;
-    line-height: 1.85;
-    margin-bottom: 1.5rem;
-    color: rgba(255, 255, 255, 0.75);
-    letter-spacing: 0.01em;
-}
-
-.about-intro-grid .about-copy .section-text:first-child {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 1.1rem;
-}
-
-.about-intro-grid .about-copy .section-text:nth-child(3) {
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 24px;
 }
 
 .about-intro-grid .about-copy .section-text:last-child {
-    font-size: 1.2rem;
-    color: #b89547;
-    font-style: italic;
-    letter-spacing: 0.02em;
-    margin-top: 2rem;
     margin-bottom: 0;
-    border-top: 1px solid rgba(184, 149, 71, 0.25);
-    padding-top: 1.5rem;
 }
 
 .about-block {
