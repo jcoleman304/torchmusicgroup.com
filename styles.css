@@ -743,21 +743,6 @@ nav.scrolled .nav-logo {
     min-width: 0;
 }
 
-.about-intro-mark-wrap {
-    width: 150px;
-    max-width: 150px;
-    margin-top: 56px;
-    overflow: hidden;
-}
-
-.about-intro-mark {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    opacity: 0.92;
-}
-
 .about-intro-grid .about-copy {
     position: relative;
     padding-left: 28px;
@@ -1930,7 +1915,6 @@ footer {
     .about-intro-grid { grid-template-columns: 1fr; gap: 24px; padding-top: 0; margin-bottom: 60px; }
     .about-intro-left { position: static; top: auto; }
     .about-intro-grid .about-section-heading--first { font-size: 2.5rem !important; }
-    .about-intro-mark-wrap { width: 110px; max-width: 110px; margin-top: 32px; }
     .torch-atl-teaser-inner { grid-template-columns: 1fr; }
     .teaser-image { aspect-ratio: 16/9; }
     .teaser-content { padding: 60px 32px; }
