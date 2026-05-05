@@ -700,6 +700,13 @@ nav.scrolled .nav-logo {
     letter-spacing: 0.02em;
 }
 
+.about-section-heading--first {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+    margin-bottom: 16px;
+}
+
 .about-block {
     margin-top: 0;
 }
