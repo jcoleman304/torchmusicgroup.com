@@ -805,6 +805,9 @@ nav.scrolled .nav-logo {
 
 .founder-photo {
     margin: 0;
+}
+
+.founder-photo-frame {
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(212, 175, 55, 0.25);
@@ -827,18 +830,13 @@ nav.scrolled .nav-logo {
 }
 
 .founder-photo-caption {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 14px 20px;
+    display: block;
+    margin-top: 18px;
     font-family: var(--sans);
     font-size: 11px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--gold);
-    background: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0.85) 100%);
-    z-index: 1;
 }
 
 .founder-bio {
