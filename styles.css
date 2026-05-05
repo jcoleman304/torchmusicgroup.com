@@ -679,6 +679,7 @@ nav.scrolled .nav-logo {
     gap: 48px;
     margin-top: 40px;
     padding-top: 0;
+    align-items: stretch;
 }
 
 .what-we-do.four-pillars {
@@ -710,6 +711,9 @@ nav.scrolled .nav-logo {
 .wwd-pillar {
     padding-top: 24px;
     border-top: 2px solid var(--gold);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .wwd-title {
