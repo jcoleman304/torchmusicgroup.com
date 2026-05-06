@@ -134,12 +134,12 @@ nav.scrolled {
 }
 
 .nav-logo {
-    height: 44px;
+    height: 56px;
     transition: height 0.3s ease;
 }
 
 nav.scrolled .nav-logo {
-    height: 36px;
+    height: 46px;
 }
 
 .nav-links {
