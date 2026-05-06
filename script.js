@@ -101,6 +101,23 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealElements.forEach(el => revealObserver.observe(el));
 
+// ── Hero Video iOS retry ──
+const heroVideo = document.getElementById('heroVideo');
+if (heroVideo) {
+    const tryPlay = () => {
+        const p = heroVideo.play();
+        if (p && typeof p.catch === 'function') p.catch(() => {});
+    };
+    tryPlay();
+    const onFirstInteract = () => {
+        tryPlay();
+        document.removeEventListener('touchstart', onFirstInteract);
+        document.removeEventListener('click', onFirstInteract);
+    };
+    document.addEventListener('touchstart', onFirstInteract, { passive: true });
+    document.addEventListener('click', onFirstInteract);
+}
+
 // ── Hero Parallax ──
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;

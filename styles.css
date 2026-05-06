@@ -251,6 +251,7 @@ nav.scrolled .nav-logo {
     object-fit: cover;
     z-index: 0;
     pointer-events: none;
+    background: var(--black);
 }
 
 .hero-video-overlay {
