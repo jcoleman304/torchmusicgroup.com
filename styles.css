@@ -105,6 +105,18 @@ a:hover {
     animation: loaderPulse 1.5s ease-in-out infinite;
 }
 
+.loader-text {
+    margin-top: 24px;
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    opacity: 0.8;
+    animation: loaderPulse 1.5s ease-in-out infinite;
+}
+
 @keyframes loaderPulse {
     0%, 100% { transform: scale(1); opacity: 0.7; }
     50% { transform: scale(1.08); opacity: 1; }
