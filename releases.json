@@ -1,10 +1,30 @@
 {
-  "last_updated": "2026-05-07T16:06:41.570Z",
+  "last_updated": "2026-05-08T15:22:10.121Z",
   "excluded_ids": [
-    { "id": "2Qn9UhVCEfHygCzFH69oP1", "title": "Back 2 Back", "artist": "RNB.FOEMOB", "removed_on": "2026-05-07" },
-    { "id": "3sSINn8gqgicH8GlxfkK63", "title": "Square Bidnez (Swishahouse Remix)", "artist": "RNB.FOEMOB", "removed_on": "2026-05-07" },
-    { "id": "0sV6J2qpTn19K9ODJXrKWt", "title": "Warzone", "artist": "RNB.FOEMOB", "removed_on": "2026-05-07" },
-    { "id": "07uZgs5B6tFthJghGfXGKD", "title": "THE YOUNGEST TO DO IT DELUXE", "artist": "RNB.FOEMOB", "removed_on": "2026-05-07" }
+    {
+      "id": "2Qn9UhVCEfHygCzFH69oP1",
+      "title": "Back 2 Back",
+      "artist": "RNB.FOEMOB",
+      "removed_on": "2026-05-07"
+    },
+    {
+      "id": "3sSINn8gqgicH8GlxfkK63",
+      "title": "Square Bidnez (Swishahouse Remix)",
+      "artist": "RNB.FOEMOB",
+      "removed_on": "2026-05-07"
+    },
+    {
+      "id": "0sV6J2qpTn19K9ODJXrKWt",
+      "title": "Warzone",
+      "artist": "RNB.FOEMOB",
+      "removed_on": "2026-05-07"
+    },
+    {
+      "id": "07uZgs5B6tFthJghGfXGKD",
+      "title": "THE YOUNGEST TO DO IT DELUXE",
+      "artist": "RNB.FOEMOB",
+      "removed_on": "2026-05-07"
+    }
   ],
   "releases": [
     {
@@ -59,6 +79,17 @@
       "release_date": "2025-11-14",
       "cover_url": "https://i.scdn.co/image/ab67616d0000b2730de9139cf4b641eba90c4843",
       "spotify_url": "https://open.spotify.com/album/0ZZXvaxfAh7KSw7sNkpo8s",
+      "apple_url": null,
+      "subtitle": "Album"
+    },
+    {
+      "id": "4M0RWZMmOdAyjlmiWPoqZL",
+      "title": "FOEMOB OFF THE LEASH",
+      "artist": "RNB.FOEMOB",
+      "type": "album",
+      "release_date": "2023-05-30",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273251372f3e5438a924086f419",
+      "spotify_url": "https://open.spotify.com/album/4M0RWZMmOdAyjlmiWPoqZL",
       "apple_url": null,
       "subtitle": "Album"
     }
