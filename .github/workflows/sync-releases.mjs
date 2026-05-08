@@ -81,7 +81,11 @@ function toRelease(item, artistName) {
 }
 
 const existingJson = JSON.parse(readFileSync('releases.json', 'utf8'));
-const excluded = new Set(existingJson.excluded_ids || []);
+// excluded_ids supports both raw strings and {id, title, ...} objects so the
+// list stays human-readable when you open releases.json later.
+const excluded = new Set(
+    (existingJson.excluded_ids || []).map(e => (typeof e === 'string' ? e : e.id))
+);
 
 const token = await getToken();
 const all = [];
