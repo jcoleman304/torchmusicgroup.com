@@ -80,6 +80,9 @@ function toRelease(item, artistName) {
     };
 }
 
+const existingJson = JSON.parse(readFileSync('releases.json', 'utf8'));
+const excluded = new Set(existingJson.excluded_ids || []);
+
 const token = await getToken();
 const all = [];
 
@@ -95,6 +98,7 @@ for (const id of artistIds) {
 // Dedupe across artists by title+date (in case of features/cross-credits)
 const seen = new Set();
 const releases = all
+    .filter(r => !excluded.has(r.id))
     .filter(r => {
         const key = `${r.artist.toLowerCase()}|${r.title.toLowerCase()}|${r.release_date}`;
         if (seen.has(key)) return false;
@@ -104,10 +108,11 @@ const releases = all
     .sort((a, b) => (b.release_date || '').localeCompare(a.release_date || ''))
     .slice(0, 9);
 
-const json = JSON.parse(readFileSync('releases.json', 'utf8'));
-// Only touch the auto-synced array — preserve manual_releases as-is
+const json = existingJson;
+// Only touch the auto-synced array — preserve manual_releases and excluded_ids
 json.releases = releases;
 json.manual_releases = json.manual_releases || [];
+json.excluded_ids = json.excluded_ids || [];
 delete json.foe_releases;
 delete json.dke_placements;
 json.last_updated = new Date().toISOString();

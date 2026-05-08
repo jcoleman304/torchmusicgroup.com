@@ -1,5 +1,11 @@
 {
   "last_updated": "2026-05-07T16:06:41.570Z",
+  "excluded_ids": [
+    "2Qn9UhVCEfHygCzFH69oP1",
+    "3sSINn8gqgicH8GlxfkK63",
+    "0sV6J2qpTn19K9ODJXrKWt",
+    "07uZgs5B6tFthJghGfXGKD"
+  ],
   "releases": [
     {
       "id": "4vCd6u0wy9Yt3rRSaphZ2X",
@@ -35,17 +41,6 @@
       "subtitle": null
     },
     {
-      "id": "2Qn9UhVCEfHygCzFH69oP1",
-      "title": "Back 2 Back",
-      "artist": "RNB.FOEMOB",
-      "type": "single",
-      "release_date": "2026-02-27",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b273effb295cbffeea2f365e56f4",
-      "spotify_url": "https://open.spotify.com/album/2Qn9UhVCEfHygCzFH69oP1",
-      "apple_url": null,
-      "subtitle": null
-    },
-    {
       "id": "4o2LIPQQLxIW1hu6H2gFYJ",
       "title": "Handsome, Young & Paid",
       "artist": "RNB.FOEMOB",
@@ -57,17 +52,6 @@
       "subtitle": null
     },
     {
-      "id": "3sSINn8gqgicH8GlxfkK63",
-      "title": "Square Bidnez (Swishahouse Remix)",
-      "artist": "RNB.FOEMOB",
-      "type": "album",
-      "release_date": "2025-12-18",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732ecc9801f0213430547596ed",
-      "spotify_url": "https://open.spotify.com/album/3sSINn8gqgicH8GlxfkK63",
-      "apple_url": null,
-      "subtitle": "Album"
-    },
-    {
       "id": "0ZZXvaxfAh7KSw7sNkpo8s",
       "title": "Square Bidnez",
       "artist": "RNB.FOEMOB",
@@ -75,28 +59,6 @@
       "release_date": "2025-11-14",
       "cover_url": "https://i.scdn.co/image/ab67616d0000b2730de9139cf4b641eba90c4843",
       "spotify_url": "https://open.spotify.com/album/0ZZXvaxfAh7KSw7sNkpo8s",
-      "apple_url": null,
-      "subtitle": "Album"
-    },
-    {
-      "id": "0sV6J2qpTn19K9ODJXrKWt",
-      "title": "Warzone",
-      "artist": "RNB.FOEMOB",
-      "type": "album",
-      "release_date": "2024-08-23",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e976f1e80bee368df814b1e8",
-      "spotify_url": "https://open.spotify.com/album/0sV6J2qpTn19K9ODJXrKWt",
-      "apple_url": null,
-      "subtitle": "Album"
-    },
-    {
-      "id": "07uZgs5B6tFthJghGfXGKD",
-      "title": "THE YOUNGEST TO DO IT DELUXE",
-      "artist": "RNB.FOEMOB",
-      "type": "album",
-      "release_date": "2023-11-05",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730e3851998c58c358a7ed8668",
-      "spotify_url": "https://open.spotify.com/album/07uZgs5B6tFthJghGfXGKD",
       "apple_url": null,
       "subtitle": "Album"
     }
