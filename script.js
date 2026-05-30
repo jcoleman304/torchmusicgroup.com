@@ -235,7 +235,7 @@ function toggleFaq(btn) {
 // ── Newsletter Subscribe ──
 // Formspree endpoint. Create a free form at https://formspree.io pointed at an
 // @torchmusicgroup.com inbox, then paste its form ID below (the part after /f/).
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xojbzaga';
 
 async function handleSubscribe(e) {
     e.preventDefault();
