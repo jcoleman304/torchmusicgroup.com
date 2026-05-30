@@ -233,18 +233,47 @@ function toggleFaq(btn) {
 }
 
 // ── Newsletter Subscribe ──
-function handleSubscribe(e) {
+// Formspree endpoint. Create a free form at https://formspree.io pointed at an
+// @torchmusicgroup.com inbox, then paste its form ID below (the part after /f/).
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+
+async function handleSubscribe(e) {
     e.preventDefault();
-    const input = e.target.querySelector('input');
-    const btn = e.target.querySelector('button');
-    btn.textContent = 'Subscribed';
-    btn.style.background = 'transparent';
-    btn.style.color = '#D4AF37';
-    input.value = '';
-    setTimeout(() => {
-        btn.textContent = 'Join the Movement';
-        btn.style.background = '';
-        btn.style.color = '';
-    }, 3000);
+    const form = e.target;
+    const input = form.querySelector('input');
+    const btn = form.querySelector('button');
+    const email = input.value.trim();
+    if (!email) return false;
+
+    const reset = (label, ok) => {
+        btn.disabled = false;
+        btn.textContent = label;
+        btn.style.background = ok ? 'transparent' : '';
+        btn.style.color = ok ? '#D4AF37' : '';
+        setTimeout(() => {
+            btn.textContent = 'Join the Movement';
+            btn.style.background = '';
+            btn.style.color = '';
+        }, 3000);
+    };
+
+    btn.disabled = true;
+    btn.textContent = 'Joining…';
+
+    try {
+        const res = await fetch(FORMSPREE_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form)
+        });
+        if (res.ok) {
+            input.value = '';
+            reset('Subscribed', true);
+        } else {
+            reset('Try again', false);
+        }
+    } catch (err) {
+        reset('Try again', false);
+    }
     return false;
 }

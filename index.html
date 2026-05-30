@@ -95,7 +95,8 @@
         <h2 class="section-title reveal">Stay <span class="gold">Connected</span></h2>
         <p class="section-text reveal reveal-delay-1" style="text-align:center; margin: 0 auto 32px;">New music, artist updates, sync opportunities, and Torch insider access. No spam. Just signal.</p>
         <form class="subscribe-form reveal reveal-delay-2" onsubmit="return handleSubscribe(event)">
-            <input type="email" placeholder="Enter your email" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="hidden" name="_subject" value="New TMG newsletter signup">
             <button type="submit">Join the Movement</button>
         </form>
     </div>
