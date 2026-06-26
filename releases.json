@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T16:23:50.616Z",
+  "last_updated": "2026-06-26T16:16:24.530Z",
   "excluded_ids": [
     {
       "id": "2Qn9UhVCEfHygCzFH69oP1",
@@ -27,6 +27,17 @@
     }
   ],
   "releases": [
+    {
+      "id": "03qoXPvibs4AJEwrMOICn4",
+      "title": "Tonka Truck (feat. Big Yavo)",
+      "artist": "RNB.FOEMOB",
+      "type": "single",
+      "release_date": "2026-06-26",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27338ae81838a5eb1f99fa1b81e",
+      "spotify_url": "https://open.spotify.com/album/03qoXPvibs4AJEwrMOICn4",
+      "apple_url": null,
+      "subtitle": null
+    },
     {
       "id": "0YvXDTZLOl8dGkF2oGXQ2S",
       "title": "Steak With Lobster (feat. Fenix Flexin & Diego Ave)",
