@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T14:57:33.838Z",
+  "last_updated": "2026-08-11T14:56:11.299Z",
   "excluded_ids": [
     {
       "id": "2Qn9UhVCEfHygCzFH69oP1",
@@ -27,6 +27,17 @@
     }
   ],
   "releases": [
+    {
+      "id": "5NKoHZF8yPBNF67aQGDzFN",
+      "title": "ROUND 3",
+      "artist": "RNB.FOEMOB",
+      "type": "single",
+      "release_date": "2026-08-11",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27305e4c1c4833b8a9cd0b0b87e",
+      "spotify_url": "https://open.spotify.com/album/5NKoHZF8yPBNF67aQGDzFN",
+      "apple_url": null,
+      "subtitle": null
+    },
     {
       "id": "03qoXPvibs4AJEwrMOICn4",
       "title": "Tonka Truck (feat. Big Yavo)",
@@ -68,17 +79,6 @@
       "release_date": "2026-04-07",
       "cover_url": "https://i.scdn.co/image/ab67616d0000b2735774123a80d43dec88405e8e",
       "spotify_url": "https://open.spotify.com/album/6ekc7eZD0wF7ckuQgIevEJ",
-      "apple_url": null,
-      "subtitle": null
-    },
-    {
-      "id": "1uXnLbiMoEW2JoMW9VwLAb",
-      "title": "That Dude (feat. STL VONN)",
-      "artist": "RNB.FOEMOB",
-      "type": "single",
-      "release_date": "2026-03-26",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735b637199176de35d73fd34ed",
-      "spotify_url": "https://open.spotify.com/album/1uXnLbiMoEW2JoMW9VwLAb",
       "apple_url": null,
       "subtitle": null
     },
