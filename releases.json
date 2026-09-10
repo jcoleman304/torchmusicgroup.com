@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-09T17:35:43.557Z",
+  "last_updated": "2026-09-10T17:29:40.229Z",
   "excluded_ids": [
     {
       "id": "2Qn9UhVCEfHygCzFH69oP1",
@@ -27,6 +27,17 @@
     }
   ],
   "releases": [
+    {
+      "id": "7l6dNgRO0Cjx5Cx5TlS6pb",
+      "title": "BABY",
+      "artist": "RNB.FOEMOB",
+      "type": "single",
+      "release_date": "2026-09-09",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273236b41c4712c04a8a0d7fb25",
+      "spotify_url": "https://open.spotify.com/album/7l6dNgRO0Cjx5Cx5TlS6pb",
+      "apple_url": null,
+      "subtitle": null
+    },
     {
       "id": "5NKoHZF8yPBNF67aQGDzFN",
       "title": "ROUND 3",
@@ -68,17 +79,6 @@
       "release_date": "2026-04-29",
       "cover_url": "https://i.scdn.co/image/ab67616d0000b2735c93beaad049f8d604392c5f",
       "spotify_url": "https://open.spotify.com/album/4vCd6u0wy9Yt3rRSaphZ2X",
-      "apple_url": null,
-      "subtitle": null
-    },
-    {
-      "id": "6ekc7eZD0wF7ckuQgIevEJ",
-      "title": "Come Up (feat. Headhuncho Amir)",
-      "artist": "RNB.FOEMOB",
-      "type": "single",
-      "release_date": "2026-04-07",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735774123a80d43dec88405e8e",
-      "spotify_url": "https://open.spotify.com/album/6ekc7eZD0wF7ckuQgIevEJ",
       "apple_url": null,
       "subtitle": null
     },
