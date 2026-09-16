@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-15T17:56:24.509Z",
+  "last_updated": "2026-09-16T17:59:02.306Z",
   "excluded_ids": [
     {
       "id": "2Qn9UhVCEfHygCzFH69oP1",
@@ -50,39 +50,6 @@
       "subtitle": null
     },
     {
-      "id": "03qoXPvibs4AJEwrMOICn4",
-      "title": "Tonka Truck (feat. Big Yavo)",
-      "artist": "RNB.FOEMOB",
-      "type": "single",
-      "release_date": "2026-06-26",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b27338ae81838a5eb1f99fa1b81e",
-      "spotify_url": "https://open.spotify.com/album/03qoXPvibs4AJEwrMOICn4",
-      "apple_url": null,
-      "subtitle": null
-    },
-    {
-      "id": "0YvXDTZLOl8dGkF2oGXQ2S",
-      "title": "Steak With Lobster (feat. Fenix Flexin & Diego Ave)",
-      "artist": "RNB.FOEMOB",
-      "type": "single",
-      "release_date": "2026-05-20",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b273cf9bd312113f43ab1cbb970e",
-      "spotify_url": "https://open.spotify.com/album/0YvXDTZLOl8dGkF2oGXQ2S",
-      "apple_url": null,
-      "subtitle": null
-    },
-    {
-      "id": "4vCd6u0wy9Yt3rRSaphZ2X",
-      "title": "Big On Big",
-      "artist": "RNB.FOEMOB",
-      "type": "single",
-      "release_date": "2026-04-29",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735c93beaad049f8d604392c5f",
-      "spotify_url": "https://open.spotify.com/album/4vCd6u0wy9Yt3rRSaphZ2X",
-      "apple_url": null,
-      "subtitle": null
-    },
-    {
       "id": "0ZZXvaxfAh7KSw7sNkpo8s",
       "title": "Square Bidnez",
       "artist": "RNB.FOEMOB",
@@ -94,13 +61,35 @@
       "subtitle": "Album"
     },
     {
-      "id": "4M0RWZMmOdAyjlmiWPoqZL",
+      "id": "00RvpxzBAcyV0FkqPdxE2Z",
+      "title": "Warzone",
+      "artist": "RNB.FOEMOB",
+      "type": "album",
+      "release_date": "2024-08-23",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273074c5ef9db4a8417c871a576",
+      "spotify_url": "https://open.spotify.com/album/00RvpxzBAcyV0FkqPdxE2Z",
+      "apple_url": null,
+      "subtitle": "Album"
+    },
+    {
+      "id": "3YTfTrdJjjNZwJIikJK8BZ",
+      "title": "THE YOUNGEST TO DO IT (DELUXE)",
+      "artist": "RNB.FOEMOB",
+      "type": "album",
+      "release_date": "2023-11-05",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27393c5e51a7019852111ef42ca",
+      "spotify_url": "https://open.spotify.com/album/3YTfTrdJjjNZwJIikJK8BZ",
+      "apple_url": null,
+      "subtitle": "Album"
+    },
+    {
+      "id": "1qhk1OiO1sLQCCCjpYYc1e",
       "title": "FOEMOB OFF THE LEASH",
       "artist": "RNB.FOEMOB",
       "type": "album",
       "release_date": "2023-05-30",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b273251372f3e5438a924086f419",
-      "spotify_url": "https://open.spotify.com/album/4M0RWZMmOdAyjlmiWPoqZL",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273997508a23e420fd371ce772c",
+      "spotify_url": "https://open.spotify.com/album/1qhk1OiO1sLQCCCjpYYc1e",
       "apple_url": null,
       "subtitle": "Album"
     }
