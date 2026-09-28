@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T18:03:16.225Z",
+  "last_updated": "2026-09-28T20:23:14.093Z",
   "excluded_ids": [
     {
       "id": "2Qn9UhVCEfHygCzFH69oP1",
@@ -27,6 +27,17 @@
     }
   ],
   "releases": [
+    {
+      "id": "6RzmUpA1SRVcJfwgzDrA7m",
+      "title": "Fight 4 Everything",
+      "artist": "RNB.FOEMOB",
+      "type": "single",
+      "release_date": "2026-09-26",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737b2882d0193f795a0dd1caad",
+      "spotify_url": "https://open.spotify.com/album/6RzmUpA1SRVcJfwgzDrA7m",
+      "apple_url": null,
+      "subtitle": null
+    },
     {
       "id": "0tAT1sq1C7nVhW1AT4oIFA",
       "title": "Good Mood",
@@ -68,17 +79,6 @@
       "release_date": "2026-06-26",
       "cover_url": "https://i.scdn.co/image/ab67616d0000b27338ae81838a5eb1f99fa1b81e",
       "spotify_url": "https://open.spotify.com/album/03qoXPvibs4AJEwrMOICn4",
-      "apple_url": null,
-      "subtitle": null
-    },
-    {
-      "id": "0YvXDTZLOl8dGkF2oGXQ2S",
-      "title": "Steak With Lobster (feat. Fenix Flexin & Diego Ave)",
-      "artist": "RNB.FOEMOB",
-      "type": "single",
-      "release_date": "2026-05-20",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b273cf9bd312113f43ab1cbb970e",
-      "spotify_url": "https://open.spotify.com/album/0YvXDTZLOl8dGkF2oGXQ2S",
       "apple_url": null,
       "subtitle": null
     },
