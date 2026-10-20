@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You're Booked | Torch Music Group</title>
-    <meta name="description" content="Your Artist Strategy Consultation with Torch Music Group is confirmed. Send your music and notes before the session.">
+    <meta name="description" content="Your session with Torch Music Group is confirmed. Send your music and notes before we talk.">
     <link rel="canonical" href="https://torchmusicgroup.com/artist-services-confirmed">
     <meta property="og:title" content="You're Booked | Torch Music Group">
     <meta property="og:description" content="Your Artist Strategy Consultation is confirmed.">
@@ -72,11 +72,11 @@
         <div class="advisory-intro">
             <div class="section-label reveal">You&rsquo;re Booked</div>
             <h1 class="section-title reveal">See you soon<span id="confirmName"></span>.</h1>
-            <p class="advisory-tagline reveal reveal-delay-1">Your Artist Strategy Consultation is confirmed.</p>
+            <p class="advisory-tagline reveal reveal-delay-1" id="confirmWhat">Your session is confirmed.</p>
             <div class="gold-divider reveal reveal-delay-1"></div>
             <div class="about-copy">
                 <p class="section-text reveal reveal-delay-2" id="confirmWhen">Your session details and Google Meet link are in the confirmation email from Calendly. Add it to your calendar now so it is not missed.</p>
-                <p class="section-text reveal reveal-delay-2">One thing before we talk: send me your music. The more I hear ahead of time, the more of our hour goes to strategy instead of catching up.</p>
+                <p class="section-text reveal reveal-delay-2">One thing before we talk: send me your music. The more I hear ahead of time, the more of our session goes to strategy instead of catching up.</p>
             </div>
         </div>
 
@@ -152,6 +152,9 @@
     if (full) document.getElementById('cfName').value = full;
     if (email) document.getElementById('cfEmail').value = email;
 
+    var ev = (q.get('event_type_name') || '').trim();
+    if (ev) document.getElementById('confirmWhat').textContent = 'Your ' + ev.replace(': Kickoff', ' kickoff') + ' is confirmed.';
+
     var start = q.get('event_start_time');
     if (start) {
         var d = new Date(start);
@@ -165,7 +168,7 @@
         e.preventDefault();
         var v = function (id) { return document.getElementById(id).value.trim(); };
         var name = v('cfName') || 'Artist';
-        var subject = 'Artist Strategy Consultation: music from ' + name;
+        var subject = (ev || 'Artist Services') + ': music from ' + name;
         var body = [
             'Name: ' + v('cfName'),
             'Email: ' + v('cfEmail'),

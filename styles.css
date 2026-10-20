@@ -2278,3 +2278,105 @@ footer {
 .consult-founder .founder-bio .section-text:last-child {
     margin-bottom: 0;
 }
+
+/* ── Artist Services: two tiers ── */
+
+.consult-hero-btns {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.consult-hero-btns .consult-hero-btn {
+    margin-top: 0;
+}
+
+.tier-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 64px;
+    max-width: 1000px;
+}
+
+.tier-card {
+    display: flex;
+    flex-direction: column;
+    padding: 36px 32px;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    background: var(--grey-dark);
+    text-decoration: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.tier-card:hover {
+    border-color: var(--gold);
+    background: var(--grey-mid);
+}
+
+.tier-card .section-label {
+    margin-bottom: 12px;
+}
+
+.tier-price {
+    font-family: var(--serif);
+    font-size: 40px;
+    line-height: 1;
+    color: var(--gold);
+    margin-bottom: 16px;
+}
+
+.tier-text {
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: 300;
+    color: var(--gold);
+    opacity: 0.8;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.tier-link {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+}
+
+.buildout-block {
+    max-width: 1000px;
+    margin-top: 100px;
+}
+
+.buildout-intro {
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: var(--gold);
+    opacity: 0.85;
+    max-width: 720px;
+    margin: 0 auto 48px;
+}
+
+.buildout-block .buildout-pillars {
+    text-align: left;
+    margin: 0 auto 48px;
+    max-width: 860px;
+}
+
+.buildout-block .advisory-cta-note a,
+.consult-pricing .advisory-cta-note a {
+    color: var(--gold);
+}
+
+@media (max-width: 768px) {
+    .tier-grid { grid-template-columns: 1fr; margin-top: 48px; }
+    .buildout-block { margin-top: 72px; }
+    .consult-hero-btns { gap: 20px; }
+}
