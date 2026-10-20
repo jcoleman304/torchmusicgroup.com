@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're Booked | Torch Music Group</title>
+    <meta name="description" content="Your Artist Strategy Consultation with Torch Music Group is confirmed. Send your music and notes before the session.">
+    <link rel="canonical" href="https://torchmusicgroup.com/artist-services-confirmed">
+    <meta property="og:title" content="You're Booked | Torch Music Group">
+    <meta property="og:description" content="Your Artist Strategy Consultation is confirmed.">
+    <meta property="og:url" content="https://torchmusicgroup.com/artist-services-confirmed">
+    <meta property="og:image" content="https://torchmusicgroup.com/images/tmg-gold-icon.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230A0A0A' width='100' height='100' rx='12'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%23D4AF37' font-family='Georgia'>T</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20261006a">
+</head>
+<body>
+
+<div class="loader" id="loader">
+    <img src="images/tmg-gold-icon.png" alt="Loading" class="loader-icon">
+    <span class="loader-text">Loading</span>
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav id="navbar">
+    <a href="index.html">
+        <img src="images/tmg-torch-mark.png" alt="Torch Music Group" class="nav-logo" id="navLogo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="roster.html">Roster</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="catalog-advisory.html">Catalog Advisory</a></li>
+        <li><a href="artist-services.html">Consulting</a></li>
+        <li><a href="https://torchatl.com" target="_blank" rel="noopener">Torch ATL</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-socials">
+        <a href="https://www.instagram.com/thetorchgroup/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://x.com/torchmusicgroup" target="_blank" rel="noopener" aria-label="X">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.4L20 4h-2l-5.2 6.4L8 4H4z"/></svg>
+        </a>
+    </div>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="about.html" onclick="closeMobile()">About</a>
+    <a href="roster.html" onclick="closeMobile()">Roster</a>
+    <a href="music.html" onclick="closeMobile()">Music</a>
+    <a href="catalog-advisory.html" onclick="closeMobile()">Catalog Advisory</a>
+    <a href="artist-services.html" onclick="closeMobile()">Consulting</a>
+    <a href="https://torchatl.com" target="_blank" rel="noopener">Torch ATL</a>
+    <a href="careers.html" onclick="closeMobile()">Careers</a>
+    <a href="faqs.html" onclick="closeMobile()">FAQs</a>
+    <a href="contact.html" onclick="closeMobile()">Contact</a>
+</div>
+
+<section class="section about-page advisory-page consult-page confirm-page">
+    <div class="section-inner">
+        <div class="advisory-intro">
+            <div class="section-label reveal">You&rsquo;re Booked</div>
+            <h1 class="section-title reveal">See you soon<span id="confirmName"></span>.</h1>
+            <p class="advisory-tagline reveal reveal-delay-1">Your Artist Strategy Consultation is confirmed.</p>
+            <div class="gold-divider reveal reveal-delay-1"></div>
+            <div class="about-copy">
+                <p class="section-text reveal reveal-delay-2" id="confirmWhen">Your session details and Google Meet link are in the confirmation email from Calendly. Add it to your calendar now so it is not missed.</p>
+                <p class="section-text reveal reveal-delay-2">One thing before we talk: send me your music. The more I hear ahead of time, the more of our hour goes to strategy instead of catching up.</p>
+            </div>
+        </div>
+
+        <div class="consult-pricing confirm-form-wrap reveal">
+            <div class="section-label">Send Your Music</div>
+            <form class="confirm-form" id="confirmForm" novalidate>
+                <div class="confirm-row">
+                    <label for="cfName">Name</label>
+                    <input type="text" id="cfName" name="name" autocomplete="name">
+                </div>
+                <div class="confirm-row">
+                    <label for="cfEmail">Email</label>
+                    <input type="email" id="cfEmail" name="email" autocomplete="email">
+                </div>
+                <div class="confirm-row">
+                    <label for="cfReleased">Released music (Spotify, Apple Music, SoundCloud, YouTube links)</label>
+                    <textarea id="cfReleased" name="released" rows="3" placeholder="Paste one link per line"></textarea>
+                </div>
+                <div class="confirm-row">
+                    <label for="cfUnreleased">Unreleased music (private SoundCloud, Drive, Dropbox or WeTransfer links)</label>
+                    <textarea id="cfUnreleased" name="unreleased" rows="3" placeholder="Paste one link per line"></textarea>
+                </div>
+                <div class="confirm-row">
+                    <label for="cfSocials">Instagram / TikTok</label>
+                    <input type="text" id="cfSocials" name="socials" placeholder="@handle">
+                </div>
+                <div class="confirm-row">
+                    <label for="cfGoals">What do you want to walk away with?</label>
+                    <textarea id="cfGoals" name="goals" rows="4" placeholder="Where you are, where you want to be, and what you want answered on the call"></textarea>
+                </div>
+                <button type="submit" class="contact-btn consult-btn">Send to Joi</button>
+                <p class="advisory-cta-note confirm-note">This opens an email to <a href="mailto:joi@torchmusicgroup.com">joi@torchmusicgroup.com</a> with your answers filled in. Attach files to that email if you want to send audio directly, or email them any time before your session.</p>
+            </form>
+        </div>
+
+        <div class="about-block">
+            <h2 class="about-section-heading reveal">What Happens Next</h2>
+            <ol class="consult-steps">
+                <li class="consult-step reveal">
+                    <span class="consult-step-num">01</span>
+                    <div>
+                        <h3 class="wwd-title">Send your music and notes</h3>
+                        <p class="wwd-text">Use the form above, or email <a href="mailto:joi@torchmusicgroup.com">joi@torchmusicgroup.com</a>. Please send everything at least 48 hours before your session.</p>
+                    </div>
+                </li>
+                <li class="consult-step reveal reveal-delay-1">
+                    <span class="consult-step-num">02</span>
+                    <div>
+                        <h3 class="wwd-title">Joi reviews before the call</h3>
+                        <p class="wwd-text">Your records, your profiles, and your goals get a real listen and a real look before we meet.</p>
+                    </div>
+                </li>
+                <li class="consult-step reveal reveal-delay-2">
+                    <span class="consult-step-num">03</span>
+                    <div>
+                        <h3 class="wwd-title">Your session</h3>
+                        <p class="wwd-text">Join the Google Meet link from your confirmation email at your booked time. Come with questions. You leave with clear next steps.</p>
+                    </div>
+                </li>
+            </ol>
+            <p class="advisory-cta-note confirm-resched">Need to reschedule? Use the link in your Calendly confirmation email at least 48 hours before your session.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+(function () {
+    var q = new URLSearchParams(window.location.search);
+    var full = (q.get('invitee_full_name') || '').trim();
+    var email = (q.get('invitee_email') || '').trim();
+    var first = full.split(' ')[0];
+    if (first) document.getElementById('confirmName').textContent = ', ' + first;
+    if (full) document.getElementById('cfName').value = full;
+    if (email) document.getElementById('cfEmail').value = email;
+
+    var start = q.get('event_start_time');
+    if (start) {
+        var d = new Date(start);
+        if (!isNaN(d)) {
+            var when = d.toLocaleString('en-US', { weekday: 'long', month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+            document.getElementById('confirmWhen').innerHTML = 'Your session is <strong>' + when + '</strong>. The Google Meet link is in the confirmation email from Calendly. Add it to your calendar now so it is not missed.';
+        }
+    }
+
+    document.getElementById('confirmForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var v = function (id) { return document.getElementById(id).value.trim(); };
+        var name = v('cfName') || 'Artist';
+        var subject = 'Artist Strategy Consultation: music from ' + name;
+        var body = [
+            'Name: ' + v('cfName'),
+            'Email: ' + v('cfEmail'),
+            '',
+            'Released music:',
+            v('cfReleased') || '(none)',
+            '',
+            'Unreleased music:',
+            v('cfUnreleased') || '(none)',
+            '',
+            'Instagram / TikTok: ' + (v('cfSocials') || '(none)'),
+            '',
+            'What I want to walk away with:',
+            v('cfGoals') || '(none)',
+            ''
+        ].join('\n');
+        window.location.href = 'mailto:joi@torchmusicgroup.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+})();
+</script>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img src="images/tmg-gold-icon.png" alt="Torch Music Group" class="footer-logo">
+        </div>
+        <div class="footer-col">
+            <div class="footer-col-title">Company</div>
+            <a href="about.html">About</a>
+            <a href="roster.html">Roster</a>
+            <a href="music.html">Music</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <div class="footer-col-title">Ecosystem</div>
+            <a href="https://torchatl.com" target="_blank" rel="noopener">Torch ATL</a>
+            <a href="catalog-advisory.html">Catalog Advisory</a>
+            <a href="artist-services.html">Artist Consulting</a>
+            <a href="careers.html">Careers</a>
+            <a href="faqs.html">FAQs</a>
+        </div>
+        <div class="footer-col">
+            <div class="footer-col-title">Follow</div>
+            <a href="https://www.instagram.com/thetorchgroup/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://x.com/torchmusicgroup" target="_blank" rel="noopener">Twitter / X</a>
+            <a href="https://www.youtube.com/@TheTorchGroup" target="_blank" rel="noopener">YouTube</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2026 Torch Music Group. All Rights Reserved.</div>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/thetorchgroup/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+            <a href="https://x.com/torchmusicgroup" target="_blank" rel="noopener" aria-label="Twitter">X</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

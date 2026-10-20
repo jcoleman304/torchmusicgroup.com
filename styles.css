@@ -2190,3 +2190,79 @@ footer {
 .consult-page .advisory-intro + .consult-pricing {
     margin-top: 72px;
 }
+
+/* ── Consultation confirmation page ── */
+
+.confirm-form-wrap {
+    margin-top: 64px;
+    text-align: left;
+}
+
+.confirm-form-wrap .section-label {
+    text-align: center;
+}
+
+.confirm-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.confirm-row {
+    margin-bottom: 24px;
+}
+
+.confirm-row label {
+    display: block;
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.confirm-row input,
+.confirm-row textarea {
+    width: 100%;
+    background: var(--grey-dark);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: var(--white);
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 300;
+    padding: 14px 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+
+.confirm-row input:focus,
+.confirm-row textarea:focus {
+    border-color: var(--gold);
+}
+
+.confirm-row input::placeholder,
+.confirm-row textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.confirm-form .contact-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.confirm-note {
+    text-align: center;
+}
+
+.confirm-resched {
+    margin-top: 40px;
+}
+
+.consult-page .wwd-text a,
+.confirm-page .advisory-cta-note a {
+    color: var(--gold);
+}
