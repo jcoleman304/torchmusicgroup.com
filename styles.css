@@ -2266,3 +2266,15 @@ footer {
 .confirm-page .advisory-cta-note a {
     color: var(--gold);
 }
+
+.consult-founder .founder-layout {
+    margin-top: 40px;
+}
+
+.consult-founder .founder-bio .section-text {
+    margin-bottom: 20px;
+}
+
+.consult-founder .founder-bio .section-text:last-child {
+    margin-bottom: 0;
+}
