@@ -169,6 +169,7 @@ nav.scrolled .nav-logo {
     color: var(--gold);
     text-decoration: none;
     position: relative;
+    white-space: nowrap;
     transition: color 0.3s ease;
 }
 
@@ -647,6 +648,61 @@ nav.scrolled .nav-logo {
     font-weight: 300;
     opacity: 0.8;
     margin-bottom: 32px;
+}
+
+/* ── Catalog Advisory ── */
+
+.advisory-band {
+    background: var(--grey-dark);
+    padding: 100px 48px;
+    text-align: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.08);
+}
+
+.advisory-band-inner {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.advisory-page .section-title {
+    margin-bottom: 16px;
+}
+
+.advisory-tagline {
+    font-family: var(--serif);
+    font-size: clamp(20px, 2.2vw, 30px);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.35;
+    color: var(--gold);
+}
+
+.advisory-intro .about-copy {
+    margin-bottom: 0;
+}
+
+.advisory-intro .about-copy .section-text {
+    margin-bottom: 0;
+}
+
+.advisory-cta {
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 1px solid rgba(212, 175, 55, 0.12);
+    text-align: center;
+}
+
+.advisory-cta .section-label {
+    margin-bottom: 28px;
+}
+
+.advisory-cta-note {
+    margin-top: 24px;
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* ── Closing Strip ── */
@@ -1957,6 +2013,17 @@ footer {
     .sync-grid { grid-template-columns: repeat(2, 1fr); }
     .careers-grid { grid-template-columns: 1fr; }
     .embed-placeholder { grid-template-columns: 1fr; }
+    .section.advisory-page { padding-top: 128px; }
+}
+
+@media (max-width: 1180px) {
+    .nav-links { gap: 22px; }
+    .nav-links a { letter-spacing: 2px; }
+}
+
+@media (max-width: 920px) {
+    .nav-links { display: none; }
+    .nav-menu-btn { display: flex; }
 }
 
 @media (max-width: 768px) {
@@ -1971,6 +2038,8 @@ footer {
     .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
     .cursor-dot, .cursor-ring { display: none; }
     .contact { padding: 100px 24px; }
+    .advisory-band { padding: 64px 24px; }
+    .section.advisory-page { padding-top: 112px; }
     .contact-categories { flex-direction: column; gap: 32px; }
     .intro-block { padding: 64px 24px; }
     .closing-strip { padding: 80px 24px; }
@@ -1984,5 +2053,131 @@ footer {
 @media (max-width: 480px) {
     .hero-headline { font-size: 28px; }
     .hero-logo-main { width: 180px; }
+    .mobile-menu { gap: 26px; }
+    .mobile-menu a { font-size: 28px; }
     .music-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Artist Strategy Consultation ── */
+
+.consult-page .advisory-intro .section-label {
+    margin-bottom: 20px;
+}
+
+.consult-page .what-we-do {
+    max-width: 1000px;
+}
+
+.consult-page .about-copy .section-text {
+    margin-bottom: 24px;
+}
+
+.consult-page .about-copy .section-text:last-child {
+    margin-bottom: 0;
+}
+
+.consult-steps {
+    list-style: none;
+    margin-top: 40px;
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.consult-step {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 24px;
+    align-items: start;
+    padding-top: 24px;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.consult-step-num {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--gold);
+    opacity: 0.6;
+    line-height: 1;
+    padding-top: 4px;
+}
+
+.consult-pricing {
+    margin-top: 100px;
+    padding: 72px 32px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    text-align: center;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.consult-pricing .section-label {
+    margin-bottom: 20px;
+}
+
+.consult-price {
+    font-family: var(--serif);
+    font-size: clamp(56px, 7vw, 88px);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.consult-price-note {
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgba(212, 175, 55, 0.7);
+    margin-bottom: 36px;
+    line-height: 1.8;
+}
+
+.consult-faq {
+    max-width: 760px;
+    margin-top: 32px;
+}
+
+.consult-faq .faq-item {
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.consult-faq .faq-question {
+    color: var(--gold);
+}
+
+.consult-faq .faq-toggle {
+    color: var(--gold);
+}
+
+.consult-faq .faq-answer p {
+    color: var(--gold);
+    opacity: 0.75;
+}
+
+.consult-faq .faq-answer a {
+    color: var(--gold);
+}
+
+@media (max-width: 768px) {
+    .consult-step { grid-template-columns: 44px 1fr; gap: 16px; }
+    .consult-step-num { font-size: 22px; }
+    .consult-pricing { padding: 48px 20px; margin-top: 72px; }
+    .consult-steps { gap: 28px; }
+}
+
+.consult-calendar {
+    margin: 8px auto 24px;
+    max-width: 100%;
+    border-top: 1px solid rgba(212, 175, 55, 0.15);
+    padding-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .consult-calendar { height: 900px !important; }
 }
