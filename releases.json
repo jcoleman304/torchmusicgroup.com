@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-22T18:19:13.670Z",
+  "last_updated": "2026-10-23T18:07:33.239Z",
   "excluded_ids": [
     {
       "id": "2Qn9UhVCEfHygCzFH69oP1",
@@ -27,6 +27,17 @@
     }
   ],
   "releases": [
+    {
+      "id": "4RoKXq5xFSTkMJiVpJpePO",
+      "title": "Coochie Man (feat. RNB.FOEMOB)",
+      "artist": "RNB.FOEMOB",
+      "type": "single",
+      "release_date": "2026-10-22",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ba34c198bcdc8c90784aa27f",
+      "spotify_url": "https://open.spotify.com/album/4RoKXq5xFSTkMJiVpJpePO",
+      "apple_url": null,
+      "subtitle": null
+    },
     {
       "id": "6RzmUpA1SRVcJfwgzDrA7m",
       "title": "Fight 4 Everything",
@@ -68,17 +79,6 @@
       "release_date": "2026-08-11",
       "cover_url": "https://i.scdn.co/image/ab67616d0000b27305e4c1c4833b8a9cd0b0b87e",
       "spotify_url": "https://open.spotify.com/album/5NKoHZF8yPBNF67aQGDzFN",
-      "apple_url": null,
-      "subtitle": null
-    },
-    {
-      "id": "03qoXPvibs4AJEwrMOICn4",
-      "title": "Tonka Truck (feat. Big Yavo)",
-      "artist": "RNB.FOEMOB",
-      "type": "single",
-      "release_date": "2026-06-26",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b27338ae81838a5eb1f99fa1b81e",
-      "spotify_url": "https://open.spotify.com/album/03qoXPvibs4AJEwrMOICn4",
       "apple_url": null,
       "subtitle": null
     },
