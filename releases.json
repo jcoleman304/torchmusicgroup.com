@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-12T21:18:26.377Z",
+  "last_updated": "2026-11-13T20:45:42.629Z",
   "excluded_ids": [
     {
       "id": "2Qn9UhVCEfHygCzFH69oP1",
@@ -68,17 +68,6 @@
       "release_date": "2026-09-09",
       "cover_url": "https://i.scdn.co/image/ab67616d0000b273236b41c4712c04a8a0d7fb25",
       "spotify_url": "https://open.spotify.com/album/7l6dNgRO0Cjx5Cx5TlS6pb",
-      "apple_url": null,
-      "subtitle": null
-    },
-    {
-      "id": "5NKoHZF8yPBNF67aQGDzFN",
-      "title": "ROUND 3",
-      "artist": "RNB.FOEMOB",
-      "type": "single",
-      "release_date": "2026-08-11",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b27305e4c1c4833b8a9cd0b0b87e",
-      "spotify_url": "https://open.spotify.com/album/5NKoHZF8yPBNF67aQGDzFN",
       "apple_url": null,
       "subtitle": null
     },
