@@ -1,0 +1,409 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body>
+<title>Secily Brief</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Instrument+Sans:wght@400..600&display=swap">
+<style>
+/* Layout: a project brief in seven beats, one idea per screen, on a dark stage lit from beneath. */
+:root{
+  color-scheme:dark;
+  --abyss:#040917; --midnight:#08122b; --deep:#0e1d48; --cobalt:#2a55dc; --electric:#5b97ff;
+  --glow:#7fdcff; --ice:#d3e8ff; --silver:#c7cfdb; --text:#e8effa; --muted:#9db0cf;
+  --line:rgba(211,232,255,.15); --veil:rgba(4,9,23,.84);
+  --serif:"Bodoni Moda","Bodoni 72","Didot","Playfair Display",Georgia,serif;
+  --sans:"Instrument Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --wrap:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html.still{scroll-behavior:auto}
+body{background:var(--abyss);color:var(--text);font-family:var(--sans);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--ice)}
+:focus-visible{outline:2px solid var(--glow);outline-offset:4px;border-radius:2px}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:16px;top:calc(env(safe-area-inset-top,0px) + 12px);z-index:20;background:var(--deep);padding:.5rem .9rem}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+.top{position:absolute;inset:0 0 auto;z-index:5}
+.top .wrap{display:flex;gap:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-block:1.1rem}
+.brand{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--silver)}
+.motion{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--silver);border:1px solid var(--line);padding:.4rem .8rem;border-radius:99px}
+.motion:hover{border-color:var(--glow);color:#fff}
+
+/* cover */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:1;mix-blend-mode:screen;pointer-events:none}
+.portrait{position:absolute;inset:0 0 0 auto;width:min(56%,680px);z-index:0;--lx:52%;--ly:36%;transform:scale(1.3);transform-origin:100% 42%;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.35) 20%,rgba(0,0,0,.85) 40%,#000 54%);mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.35) 20%,rgba(0,0,0,.85) 40%,#000 54%)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:64% 30%;display:block;max-width:none}
+.portrait .ripple{position:absolute;inset:0;filter:url(#ripple);will-change:filter;
+  -webkit-mask-image:radial-gradient(ellipse 27% 27% at 56% 39%,transparent 55%,#000 100%);mask-image:radial-gradient(ellipse 27% 27% at 56% 39%,transparent 55%,#000 100%)}
+html.still .portrait .ripple{display:none}
+.portrait::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(0deg,var(--abyss) 2%,rgba(4,9,23,0) 34%),
+  radial-gradient(circle at var(--lx) var(--ly),rgba(4,9,23,0) 0%,rgba(4,9,23,.1) 22%,var(--veil) 68%)}
+.hero-in{position:relative;z-index:2;min-height:min(100svh,820px);display:flex;flex-direction:column;justify-content:flex-end;gap:1.2rem;padding-block:7.5rem 4rem}
+.hero .name{font-family:"Monsieur La Doulaise","Snell Roundhand","Apple Chancery",cursive;font-weight:400;font-size:clamp(6.5rem,25vw,19rem);line-height:.9;
+  padding:.12em .3em .16em .08em;margin:0 0 -.06em -.06em;transform:rotate(-7deg);transform-origin:left bottom;white-space:nowrap;
+  color:#f4feff;-webkit-text-stroke:.012em #eaffff;
+  text-shadow:0.6px 1px 0 rgb(32,113,182),1.2px 2px 0 rgb(30,106,174),1.8px 3px 0 rgb(28,99,166),2.4px 4px 0 rgb(26,92,158),3.0px 5px 0 rgb(24,85,150),3.6px 6px 0 rgb(22,78,142),4.2px 7px 0 rgb(20,71,134),4.8px 8px 0 rgb(18,64,126),5.4px 9px 0 rgb(16,57,118),6.0px 10px 0 rgb(14,50,110),6.6px 11px 0 rgb(12,43,102),0 0 10px rgba(120,240,255,.95),0 0 26px rgba(40,190,255,.85),6px 14px 46px rgba(0,150,255,.75),10px 22px 90px rgba(0,110,255,.55)}
+.hero .name .ily{color:#f6fff8;text-shadow:0.6px 1px 0 rgb(32,113,182),1.2px 2px 0 rgb(30,106,174),1.8px 3px 0 rgb(28,99,166),2.4px 4px 0 rgb(26,92,158),3.0px 5px 0 rgb(24,85,150),3.6px 6px 0 rgb(22,78,142),4.2px 7px 0 rgb(20,71,134),4.8px 8px 0 rgb(18,64,126),5.4px 9px 0 rgb(16,57,118),6.0px 10px 0 rgb(14,50,110),6.6px 11px 0 rgb(12,43,102),0 0 10px rgba(140,255,200,.95),0 0 26px rgba(60,235,190,.8),6px 14px 46px rgba(0,170,255,.75),10px 22px 90px rgba(0,110,255,.55)}
+.hero .sub{font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,4.2vw,3rem);line-height:1.1;color:var(--ice)}
+.pill{align-self:flex-start;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--abyss);background:var(--glow);padding:.35rem .9rem;border-radius:4px}
+.cta{display:inline-flex;align-items:center;gap:.7rem;align-self:flex-start;margin-top:.6rem;padding:.95rem 1.7rem;border:1px solid var(--ice);border-radius:99px;
+  text-decoration:none;color:var(--abyss);background:var(--ice);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem;transition:box-shadow .5s,background .3s}
+.cta:hover,.cta:focus-visible{background:#fff;box-shadow:0 0 34px 2px rgba(127,220,255,.45)}
+.emblem{position:absolute;right:max(20px,env(safe-area-inset-right,0px));bottom:2.2rem;z-index:3;display:flex;flex-direction:column;align-items:center;gap:.2rem}
+.emblem svg{width:74px;height:92px;overflow:visible}
+.ph-tag{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--line);padding:.18rem .5rem;border-radius:3px}
+.s-trace{fill:none;stroke:var(--glow);stroke-width:.9;stroke-dasharray:60 340;animation:trace 9s linear infinite;filter:drop-shadow(0 0 4px var(--glow))}
+@keyframes trace{to{stroke-dashoffset:-400}}
+
+/* lagoon at night: warm firefly lights over deep blue water */
+.fireflies{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fireflies i{position:absolute;width:var(--s);height:var(--s);border-radius:50%;background:#ffe2a8;box-shadow:0 0 8px 2px rgba(255,190,90,.7),0 0 22px 6px rgba(255,170,60,.22);opacity:.5;animation:fly var(--d) ease-in-out var(--k) infinite alternate}
+@keyframes fly{0%{opacity:.12;transform:translate(0,0)}50%{opacity:.85}100%{opacity:.3;transform:translate(14px,-22px)}}
+html.still .fireflies i{animation:none}
+.statement .wrap{position:relative}
+
+
+/* the whole cover is open water, drawn live: dark swells with wisps of light that fold and drift like the sea */
+.water{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.water canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+/* the red rose in the picture sways on its own, stronger than the water around it */
+.portrait .rose{position:absolute;inset:0;filter:url(#sway);will-change:filter,transform;animation:rose 7s ease-in-out infinite alternate;transform-origin:42% 74%;
+  -webkit-mask-image:radial-gradient(ellipse 36% 27% at 42% 74%,#000 45%,transparent 100%);mask-image:radial-gradient(ellipse 36% 27% at 42% 74%,#000 45%,transparent 100%)}
+@keyframes rose{from{transform:translate(-5px,3px) rotate(-1.6deg) scale(1)}to{transform:translate(6px,-5px) rotate(1.8deg) scale(1.035)}}
+html.still .portrait .rose{display:none}
+
+/* beats */
+section{padding-block:clamp(4rem,10vw,8rem);position:relative;border-top:1px solid var(--line)}
+main p,main li,main h3{text-shadow:0 1px 14px rgba(2,5,14,.9)}
+footer{position:relative;background:rgba(4,9,23,.6)}
+h2{font-family:"Monsieur La Doulaise","Snell Roundhand","Apple Chancery",cursive;font-weight:400;font-size:clamp(3.6rem,9.5vw,7rem);line-height:1;letter-spacing:0;text-wrap:balance;
+  padding:.12em .2em .14em .06em;margin:-.1em 0 0 -.06em;transform:rotate(-3deg);transform-origin:left bottom;color:#f4feff;-webkit-text-stroke:.012em #eaffff;
+  text-shadow:0.6px 1.0px 0 rgb(30,107,175),1.2px 2.0px 0 rgb(26,94,160),1.8px 3.0px 0 rgb(22,81,145),2.4px 4.0px 0 rgb(18,68,130),3.0px 5.0px 0 rgb(14,55,115),3.6px 6.0px 0 rgb(10,42,100),0 0 8px rgba(120,240,255,.95),0 0 20px rgba(40,190,255,.85),4px 9px 34px rgba(0,150,255,.7)}
+.hint{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--glow);font-weight:600}
+.fine{color:var(--muted);font-size:.85rem;margin-top:1.6rem}
+
+.goals .wrap{display:grid;grid-template-columns:1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.goals p{font-size:clamp(1.25rem,2.5vw,1.8rem);line-height:1.45;margin-top:1.6rem;max-width:44rem;text-wrap:pretty}
+.goals figure{position:relative;margin-block:-3rem;margin-right:-2rem}
+.goals figure img{width:100%;height:auto;display:block}
+.goals h2{font-family:"Monsieur La Doulaise","Snell Roundhand","Apple Chancery",cursive;font-weight:400;text-transform:none;letter-spacing:0;font-size:clamp(5.5rem,15vw,11.5rem);line-height:.95;
+  padding:.1em .3em .12em .1em;margin:-.2em 0 -.1em -.1em;transform:rotate(-6deg);transform-origin:left bottom;white-space:nowrap;color:#f4feff;-webkit-text-stroke:.012em #eaffff;text-shadow:0.6px 1px 0 rgb(32,113,182),1.2px 2px 0 rgb(30,106,174),1.8px 3px 0 rgb(28,99,166),2.4px 4px 0 rgb(26,92,158),3.0px 5px 0 rgb(24,85,150),3.6px 6px 0 rgb(22,78,142),4.2px 7px 0 rgb(20,71,134),4.8px 8px 0 rgb(18,64,126),5.4px 9px 0 rgb(16,57,118),6.0px 10px 0 rgb(14,50,110),6.6px 11px 0 rgb(12,43,102),0 0 10px rgba(120,240,255,.95),0 0 26px rgba(40,190,255,.85),6px 14px 46px rgba(0,150,255,.75),10px 22px 90px rgba(0,110,255,.55)}
+.goals h2 img.moon-o{height:.5em;width:.5em;display:inline-block;vertical-align:-.02em;margin:0 .04em 0 .03em;filter:drop-shadow(0 0 18px rgba(70,150,255,.65)) drop-shadow(0 0 46px rgba(42,85,220,.5))}
+
+.cloud-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem 2rem;flex-wrap:wrap}
+.cloud{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.5rem clamp(1.2rem,3.4vw,2.8rem);margin-top:2.6rem}
+.cloud a{font-family:var(--serif);line-height:1.15;color:var(--text);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.16em;text-decoration-color:rgba(211,232,255,.4);
+  padding:.15em 0;transition:color .4s,text-shadow .9s,text-decoration-color .4s}
+.cloud a:hover,.cloud a:focus-visible,.cloud a.lit{color:#fff;text-decoration-color:var(--glow);text-shadow:0 0 26px rgba(127,220,255,.75),0 0 60px rgba(42,85,220,.8)}
+.cloud .t1{font-size:clamp(2.3rem,7vw,5rem)}
+.cloud .t2{font-size:clamp(1.5rem,3.9vw,2.7rem)}
+.cloud .t3{font-size:clamp(1.05rem,2.2vw,1.5rem);color:var(--silver)}
+.cloud li:nth-child(3n) a{font-style:italic}
+.cloud small{font-family:var(--sans);font-size:.72rem;letter-spacing:.06em;color:var(--muted);margin-left:.35em;font-style:normal}
+
+.themes .sheet{margin-top:2.4rem;border:1px solid var(--line);background:linear-gradient(180deg,rgba(14,29,72,.55),rgba(8,18,43,.4));padding:clamp(1.4rem,4vw,3rem);display:grid;grid-template-columns:1fr 1fr;gap:2rem clamp(2rem,6vw,5rem)}
+.themes h3{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--glow);font-weight:600;margin-bottom:.6rem}
+.themes .tl li{font-size:clamp(1.05rem,1.9vw,1.3rem);padding:.5rem 0;border-bottom:1px solid var(--line)}
+.themes .cl li{padding:.65rem 0;border-bottom:1px solid var(--line)}
+.themes .cl b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(1.4rem,2.7vw,1.9rem);line-height:1.15;color:var(--ice)}
+.themes .cl span{color:var(--silver);font-size:.95rem}
+
+.statement{overflow:hidden;background:radial-gradient(55% 75% at 82% 50%,rgba(24,120,160,.3),rgba(14,60,110,.1) 55%,transparent 75%)}
+.statement p.big{font-family:var(--serif);font-size:clamp(1.6rem,4.1vw,3.1rem);line-height:1.22;text-wrap:pretty;max-width:60rem}
+.statement p.theme{font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,2.4vw,1.7rem);color:var(--glow);margin-top:2rem}
+
+.remember .grid{display:grid;grid-template-columns:1fr 1.05fr 1fr;gap:14px clamp(1.2rem,3vw,2.4rem);align-items:stretch;margin-top:.5rem}
+/*h2 in the middle column*/.remember .mid h2{font-size:clamp(3rem,5.6vw,4.6rem);transform-origin:center}
+.remember .mid{grid-column:2;grid-row:1 / span 3;display:flex;flex-direction:column;justify-content:center;gap:1.4rem;text-align:center}
+.remember .mid p{font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,2.2vw,1.6rem);line-height:1.3;color:var(--abyss);background:var(--ice);padding:1rem 1.2rem;border-radius:4px}
+.card{border:1px solid var(--line);border-top:2px solid var(--glow);background:rgba(14,29,72,.45);padding:1.4rem 1.2rem;font-size:clamp(.95rem,1.5vw,1.12rem);letter-spacing:.12em;text-transform:uppercase;font-weight:500;line-height:1.45;display:flex;align-items:center;min-height:6.5rem}
+.card:nth-of-type(even){border-top-color:var(--electric)}
+.remember .l{grid-column:1}.remember .r{grid-column:3}
+.card{grid-row:var(--r)}
+
+.end{text-align:center}
+.end h2{font-size:clamp(3.8rem,11vw,8.5rem);transform-origin:center;margin-inline:auto}
+.end .cta{margin:2.2rem auto 0}
+.dl-status{font-size:.85rem;color:var(--muted);min-height:1.3em;margin-top:.8rem}
+footer{border-top:1px solid var(--line);padding-block:2rem 3rem;color:var(--muted);font-size:.8rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem 2rem;flex-wrap:wrap}
+
+html.still .s-trace{animation:none;stroke-dasharray:none;opacity:.5}
+html.still *{transition-duration:.01s !important}
+@media (max-width:760px){
+  .portrait{width:100%;inset:0;-webkit-mask-image:none;mask-image:none;transform:scale(1.22);transform-origin:60% 34%}
+  .portrait .ripple{-webkit-mask-image:radial-gradient(ellipse 44% 25% at 56% 37%,transparent 55%,#000 100%);mask-image:radial-gradient(ellipse 44% 25% at 56% 37%,transparent 55%,#000 100%)}
+  .portrait::after{background:linear-gradient(0deg,var(--abyss) 20%,rgba(4,9,23,.35) 62%,rgba(4,9,23,.55) 100%),radial-gradient(circle at var(--lx) var(--ly),rgba(4,9,23,0) 0%,var(--veil) 78%)}
+  .emblem{bottom:auto;top:4.6rem}
+  .emblem svg{width:48px;height:60px}
+  .goals .wrap{grid-template-columns:1fr}
+  .goals figure{max-width:400px;margin:-1rem 0 0}
+  .themes .sheet{grid-template-columns:1fr}
+  .remember .grid{grid-template-columns:1fr}
+  .remember .mid,.remember .l,.remember .r{grid-column:1;grid-row:auto}
+  .card{min-height:0;grid-row:auto}
+}
+/* section headings sit centred */
+main h2,.goals h2{text-align:center;transform-origin:center;margin-left:0;margin-right:0}
+.cloud-head{flex-direction:column;align-items:center;gap:.6rem}
+/* body copy: a classical serif that sits with the script headings, centred throughout */
+:root{--copy:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif}
+.goals p{font-family:var(--copy);font-weight:500;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.38;text-align:center;margin-inline:auto;max-width:46rem}
+.themes .sheet{text-align:center}
+.themes .tl li{font-family:var(--copy);font-weight:500;font-size:clamp(1.25rem,2.2vw,1.55rem)}
+.themes .cl span{font-family:var(--copy);font-weight:500;font-size:1.2rem;line-height:1.35}
+.statement .wrap{text-align:center}
+.statement p.big{margin-inline:auto}
+.card{font-family:var(--copy);font-weight:600;font-size:clamp(1.05rem,1.7vw,1.3rem);letter-spacing:.1em;justify-content:center;text-align:center}
+.fine{font-family:var(--copy);font-size:1.05rem;text-align:center;margin-inline:auto}
+footer .wrap{justify-content:center;text-align:center}
+.facts{display:flex;flex-wrap:wrap;gap:.6rem 2.4rem;margin:.3rem 0 .2rem;align-self:flex-start;padding:.9rem 1.3rem 1rem;background:rgba(3,7,20,.78);border:1px solid rgba(127,220,255,.35);border-radius:6px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.facts div{display:flex;flex-direction:column;gap:.2rem}
+.facts dt{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--glow);font-weight:600}
+.facts dd{margin:0;font-family:var(--copy);font-weight:600;font-size:1.6rem;line-height:1.15;color:#fff}
+.facts a{color:#fff;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.2em;text-decoration-color:var(--glow)}
+.emblem img{width:clamp(84px,9.5vw,132px);height:auto;display:block;filter:drop-shadow(0 0 18px rgba(90,160,255,.45))}
+@media (max-width:760px){.emblem img{width:64px}}
+/* pop-up player for the reference records (hosted page only; inside a Claude artifact titles open a new tab) */
+dialog.player{border:1px solid rgba(127,220,255,.4);padding:0;background:#050b1e;color:var(--text);width:min(880px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto;border-radius:8px;box-shadow:0 0 60px rgba(40,150,255,.35)}
+dialog.player::backdrop{background:rgba(2,5,14,.82);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.player .frame{position:relative;aspect-ratio:16/9;background:#000}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player .bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.8rem 1.4rem;padding:1rem 1.2rem 1.1rem}
+.player h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.4rem,3.4vw,2rem);line-height:1.1;margin:0}
+.player .by{font-family:var(--copy);font-size:1.2rem;color:var(--silver);margin-top:.15rem}
+.player .acts{display:flex;gap:.6rem;flex-wrap:wrap}
+.player .acts a,.player .acts button{font:600 .74rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ice);border:1px solid var(--line);border-radius:99px;padding:.65rem 1rem;text-decoration:none;background:none;cursor:pointer}
+.player .acts a:hover,.player .acts button:hover{border-color:var(--glow);color:#fff}
+</style>
+
+<div class="water" aria-hidden="true"><canvas id="sea"></canvas></div>
+<div class="fireflies" id="fireflies" aria-hidden="true"></div>
+<a class="skip" href="#goals">Skip to the brief</a>
+
+<header class="hero" id="top">
+  <div class="top"><div class="wrap">
+    <span class="brand">Torch Music Group · Private</span>
+    <button class="motion" id="motionToggle" type="button" aria-pressed="false">Reduce motion</button>
+  </div></div>
+  <figure class="portrait" id="portrait"><img src="assets/goals-water-heart.jpg" alt="A woman with red lips, eyes closed, floating in deep blue water and holding a glossy red heart." width="1254" height="1254"><img class="ripple" src="assets/goals-water-heart.jpg" alt="" aria-hidden="true" width="1254" height="1254">
+    <img class="rose" src="assets/goals-water-heart.jpg" alt="" aria-hidden="true" width="1254" height="1254">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="sway" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence id="swayNoise" type="fractalNoise" baseFrequency="0.007 0.011" numOctaves="2" seed="23" result="n"/>
+      <feDisplacementMap id="swayPush" in="SourceGraphic" in2="n" scale="30" xChannelSelector="R" yChannelSelector="G"/>
+    </filter><filter id="ripple" x="-4%" y="-4%" width="108%" height="108%">
+      <feTurbulence id="rippleNoise" type="fractalNoise" baseFrequency="0.011 0.017" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap id="ripplePush" in="SourceGraphic" in2="n" scale="18" xChannelSelector="R" yChannelSelector="G"/>
+    </filter></svg></figure>
+  <canvas id="water" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <h1 class="name" aria-label="Secily">Sec<span class="ily">ily</span></h1>
+    <span class="pill">Secily Brief</span>
+    <dl class="facts">
+      <div><dt>Music</dt><dd><a href="https://open.spotify.com/artist/32eZd7DKXr4eQTWqWRHGe2?si=8V0h_QDYSo-d5oF9fnRF-w" target="_blank" rel="noopener">Listen on Spotify<span class="vh">, opens in a new tab</span></a></dd></div>
+      <div><dt>Hometown</dt><dd>Houston, TX</dd></div>
+      <div><dt>Based in</dt><dd>NYC / ATL</dd></div>
+    </dl>
+    <a class="cta" href="#goals">Explore the Brief <span aria-hidden="true">↓</span></a>
+  </div>
+  <div class="emblem"><img src="assets/emblem.png" alt="Secily emblem: a chrome profile of a woman with a hoop earring, inside a ring." width="440" height="440"></div>
+</header>
+
+<main>
+<section class="goals" id="goals"><div class="wrap">
+  <div><h2>Goals</h2><p id="goalsText"></p></div>
+</div></section>
+
+<section id="sound"><div class="wrap">
+  <div class="cloud-head"><h2>Sonic References</h2><span class="hint">Click to open links</span></div>
+  <ul class="cloud" id="cloud"></ul>
+  <p class="fine">Each title opens in a new tab. Nothing plays on this page. * Proposed, not yet in the approved brief.</p>
+</div></section>
+
+<section class="themes" id="write"><div class="wrap">
+  <h2>Themes / Concepts to Consider</h2>
+  <div class="sheet">
+    <div><h3>Themes</h3><ul class="tl" id="themes"></ul></div>
+    <div><h3>Song starts</h3><ul class="cl" id="concepts"></ul></div>
+  </div>
+</div></section>
+
+<section class="statement" id="statementSec"><div class="wrap">
+  <p class="big" id="statement"></p>
+  <p class="theme" id="theme"></p>
+</div></section>
+
+<section class="remember" id="remember"><div class="wrap">
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section class="end" id="end"><div class="wrap">
+  <h2 id="close"></h2>
+  <a class="cta" id="download" href="" download>Download Creative Brief <span aria-hidden="true">↓</span></a>
+  <p class="dl-status" id="dlStatus" role="status" aria-live="polite"></p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>Torch Music Group · Private project brief · Not for distribution</span>
+  <span id="foot"></span>
+</div></footer>
+
+<dialog class="player" id="player" aria-labelledby="plTitle">
+  <div class="frame" id="plFrame"></div>
+  <div class="bar">
+    <div><h3 id="plTitle"></h3><p class="by" id="plBy"></p></div>
+    <div class="acts"><button type="button" id="plPrev">← Prev</button><button type="button" id="plNext">Next →</button><a id="plOpen" href="" target="_blank" rel="noopener">Open on YouTube</a><button type="button" id="plClose">Close</button></div>
+  </div>
+</dialog>
+
+<script>
+const DATA = {"meta": {"artist": "SECILY", "title": "PROJECT BRIEF", "label": "Torch Music Group", "kind": "Project brief", "date": "November 24, 2026", "source": "Secily Complete Creative Brief (sonic bible + songwriting and creative direction)", "pdf": "SECILY_Creative_Brief.pdf"}, "goals": "We’re looking for timeless, romantic, vocal-led R&B and soul with the reach of a big pop ballad. Warm chords, a groove you can feel, and room for Secily’s voice to carry the story. We don’t want trend-chasing records or scorned-woman songs.", "refs": [{"title": "Breathe Again", "artist": "Toni Braxton", "url": "https://www.youtube.com/watch?v=pRFEz2MjZgg", "tier": 1, "proposed": false, "embed": true}, {"title": "Take Me as I Am", "artist": "Mary J. Blige", "url": "https://www.youtube.com/watch?v=NzNiE3ZUHdk", "tier": 2, "proposed": false, "embed": true}, {"title": "So Fine", "artist": "Mint Condition", "url": "https://www.youtube.com/watch?v=9snzTFzLEq0", "tier": 2, "proposed": false, "embed": true}, {"title": "My All", "artist": "Mariah Carey", "url": "https://www.youtube.com/watch?v=mIhI23gBBPQ", "tier": 1, "proposed": false, "embed": true}, {"title": "Until the End of Time", "artist": "Justin Timberlake feat. Beyoncé", "url": "https://www.youtube.com/watch?v=Hkw3WGPEbRw", "tier": 3, "proposed": false, "embed": true}, {"title": "Sweet Love", "artist": "Anita Baker", "url": "https://www.youtube.com/watch?v=pHE5EEePiGU", "tier": 2, "proposed": true, "embed": true}, {"title": "Heaven Sent", "artist": "Keyshia Cole", "url": "https://www.youtube.com/watch?v=POkQXeTv7-4", "tier": 2, "proposed": false, "embed": true}, {"title": "Kissing You", "artist": "Des’ree", "url": "https://www.youtube.com/watch?v=RMg8fnRG5zI", "tier": 1, "proposed": false, "embed": true}, {"title": "Love", "artist": "Keyshia Cole", "url": "https://www.youtube.com/watch?v=9PBZy9j3H3I", "tier": 2, "proposed": false, "embed": true}, {"title": "One Sweet Day", "artist": "Mariah Carey & Boyz II Men", "url": "https://www.youtube.com/watch?v=UXxRyNvTPr8", "tier": 3, "proposed": false, "embed": true}, {"title": "Almost Doesn’t Count", "artist": "Brandy", "url": "https://www.youtube.com/watch?v=is9b77WXqmY", "tier": 2, "proposed": false, "embed": true}, {"title": "Heartbreak Hotel", "artist": "Whitney Houston", "url": "https://www.youtube.com/watch?v=xEmdW3_bi4c", "tier": 1, "proposed": false, "embed": true}, {"title": "Just Fine", "artist": "Mary J. Blige", "url": "https://www.youtube.com/watch?v=G6ZjBPXSmnE", "tier": 2, "proposed": false, "embed": true}, {"title": "Ready or Not", "artist": "After 7", "url": "https://www.youtube.com/watch?v=fohpiig8N4U", "tier": 3, "proposed": false, "embed": true}, {"title": "ICU", "artist": "Coco Jones", "url": "https://www.youtube.com/watch?v=rtfyUvIYaKw", "tier": 2, "proposed": false, "embed": true}, {"title": "Have You Ever?", "artist": "Brandy", "url": "https://www.youtube.com/watch?v=Xkj1An6Wnec", "tier": 2, "proposed": false, "embed": true}, {"title": "Endless Love", "artist": "Luther Vandross & Mariah Carey", "url": "https://www.youtube.com/watch?v=nScV1qu-MZQ", "tier": 3, "proposed": false, "embed": true}, {"title": "Remember the Time", "artist": "Michael Jackson", "url": "https://www.youtube.com/watch?v=LeiFF0gvqcc", "tier": 2, "proposed": true, "embed": true}, {"title": "Don’t Let Go (Love)", "artist": "En Vogue", "url": "https://www.youtube.com/watch?v=mwhwGmoYv1s", "tier": 2, "proposed": false, "embed": true}, {"title": "Come Through", "artist": "H.E.R. feat. Chris Brown", "url": "https://www.youtube.com/watch?v=50GjhhyfN_Q", "tier": 3, "proposed": false, "embed": true}, {"title": "The Power of Love", "artist": "Céline Dion", "url": "https://www.youtube.com/watch?v=Y8HOfcYWZoo", "tier": 3, "proposed": false, "embed": true}, {"title": "Made for Me", "artist": "Muni Long", "url": "https://www.youtube.com/watch?v=vYa3ak-3p60", "tier": 3, "proposed": false, "embed": true}], "themes": ["Self-love", "Choosing yourself first", "Accepting who you are", "Love that’s everywhere: air, gravity, light, the ocean", "Devotion and gratitude", "Unconditional love", "Knowing your worth", "Loving without losing yourself", "Forgiving heartbreak", "Remembering the good", "Joy and confidence", "Personal growth"], "concepts": [{"title": "Take Me as I Am", "q": "What changes when you stop editing yourself to be loved?"}, {"title": "Choose Yourself First", "q": "How does loving yourself better change the way you love someone else?"}, {"title": "Everywhere Like Air", "q": "Love that’s present even when the person is gone. Find the ordinary detail."}, {"title": "Remember With Love", "q": "Forgive the heartbreak. Let the tenderness of the memory survive."}, {"title": "Just Fine", "q": "The moment you realize you feel good in your own life again."}, {"title": "How Much I Love You", "q": "A dedication for a partner, a child or yourself, without changing the lyric."}], "statement": "We want to bring the romantic R&B sophistication of 1996–2005 into 2027 without sounding dated. Secily’s voice is the centerpiece. The production is the architecture around it. Expensive without being overproduced. Powerful without being loud. Contemporary without being trendy.", "theme": "Learning to love myself so I can love you better.", "remember": {"center": "We love when a song leaves you feeling better about yourself.", "cards": ["Build around the voice, not the beat", "It should work on just piano or guitar", "Start close. Open up when the lyric earns it", "Write it so anyone can dedicate it to anyone", "Heartbreak with tenderness, discernment and self-respect", "Try a Spanish alternate that sings naturally"]}, "close": "Thank you. Make something timeless."};
+(function(){
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const root = document.documentElement;
+
+  let still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  try { const s = localStorage.getItem('secily-motion'); if (s) still = s === 'still'; } catch (e) {}
+  const mt = $('motionToggle');
+  function applyMotion(){
+    root.classList.toggle('still', still);
+    mt.setAttribute('aria-pressed', String(still));
+    mt.textContent = still ? 'Motion off' : 'Reduce motion';
+    if (!still) startWater();
+  }
+  mt.addEventListener('click', () => { still = !still; try { localStorage.setItem('secily-motion', still ? 'still' : 'move'); } catch (e) {} applyMotion(); });
+
+  function flies(n,seed){let h='';for(let i=0;i<n;i++){const r=k=>{const v=Math.sin((i+seed)*k)*43758.5453;return v-Math.floor(v)};h+=`<i style="left:${(r(12.9)*100).toFixed(1)}%;top:${(r(78.2)*100).toFixed(1)}%;--d:${(5+r(3.7)*7).toFixed(1)}s;--k:${(-r(9.1)*10).toFixed(1)}s;--s:${(2+r(5.3)*3).toFixed(1)}px"></i>`}return h}
+  $('fireflies').innerHTML = flies(30, 3);
+  $('goalsText').textContent = DATA.goals;
+  $('cloud').innerHTML = DATA.refs.map(r => `<li><a class="t${r.tier}" href="${esc(r.url)}" target="_blank" rel="noopener" title="${esc(r.artist || r.title)}">${esc(r.title)}${r.proposed ? '*' : ''}<span class="vh">${r.artist ? ', ' + esc(r.artist) : ''}, opens in a new tab</span></a></li>`).join('');
+  /* on a hosted page a title opens the pop-up player; inside a Claude artifact embeds are blocked, so it stays a new-tab link */
+  const canEmbed = /^https?:$/.test(location.protocol) && !window.claude && !/claude/i.test(location.hostname);
+  const pl = $('player'); let plI = 0, plFrom = null;
+  function plShow(i){ plI = (i + DATA.refs.length) % DATA.refs.length; const r = DATA.refs[plI], id = (r.url.split('v=')[1] || '').slice(0, 11);
+    $('plTitle').textContent = r.title; $('plBy').textContent = r.artist || ''; $('plOpen').href = r.url;
+    const f = document.createElement('iframe'); f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?rel=0&playsinline=1';
+    f.title = r.title + (r.artist ? ', ' + r.artist : ''); f.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen'; f.allowFullscreen = true; f.referrerPolicy = 'strict-origin-when-cross-origin';
+    $('plFrame').replaceChildren(f); }
+  if (canEmbed && pl.showModal) {
+    document.querySelectorAll('.fine').forEach(n => { if (/new tab/.test(n.textContent)) n.textContent = 'Tap a title to open the player. Nothing plays until you press play. * Proposed, not yet in the approved brief.'; });
+    $('plPrev').addEventListener('click', () => plShow(plI - 1)); $('plNext').addEventListener('click', () => plShow(plI + 1));
+    $('plClose').addEventListener('click', () => { $('plFrame').replaceChildren(); pl.close(); });
+    pl.addEventListener('click', e => { if (e.target === pl) { $('plFrame').replaceChildren(); pl.close(); } });
+    pl.addEventListener('close', () => { $('plFrame').replaceChildren(); if (plFrom) plFrom.focus(); });
+  }
+  $('cloud').addEventListener('click', e => { const a = e.target.closest('a'); if (!a) return;
+    if (canEmbed && pl.showModal && !e.metaKey && !e.ctrlKey) { e.preventDefault(); plFrom = a; plShow([...document.querySelectorAll('#cloud a')].indexOf(a)); pl.showModal(); } document.querySelectorAll('.cloud a.lit').forEach(x => x.classList.remove('lit')); a.classList.add('lit'); surge = 1; });
+  $('themes').innerHTML = DATA.themes.map(t => `<li>${esc(t)}</li>`).join('');
+  $('concepts').innerHTML = DATA.concepts.map(c => `<li><b>${esc(c.title)}</b><span>${esc(c.q)}</span></li>`).join('');
+  $('statement').textContent = DATA.statement;
+  $('theme').textContent = '“' + DATA.theme + '”';
+  const C = DATA.remember.cards;
+  $('grid').innerHTML = `<div class="mid"><h2>A Few Things to Remember</h2><p>${esc(DATA.remember.center)}</p></div>` +
+    C.map((c, i) => `<div class="card ${i < 3 ? 'l' : 'r'}" style="--r:${i % 3 + 1}">${esc(c)}</div>`).join('');
+  $('close').textContent = DATA.close;
+  $('foot').textContent = 'Source: Secily Complete Creative Brief · ' + DATA.meta.date;
+
+  /* download: a plain link on the open web, the viewer's save prompt inside a Claude artifact */
+  const dl = $('download'), st = $('dlStatus'); let saver = null, pdfBlob = null;
+  dl.href = DATA.meta.pdf; dl.setAttribute('download', DATA.meta.pdf);
+  if (window.claude && window.claude.use) {
+    window.claude.use('downloads').then(d => {
+      if (!d) { st.textContent = 'Download is not available in this view.'; return; }
+      saver = d;
+      fetch(DATA.meta.pdf).then(r => r.ok ? r.blob() : Promise.reject()).then(b => { pdfBlob = b; }).catch(() => { st.textContent = 'The PDF could not be loaded.'; });
+    });
+    dl.addEventListener('click', e => {
+      e.preventDefault();
+      if (!saver || !pdfBlob) { st.textContent = saver ? 'Preparing the PDF. Try again in a moment.' : 'Download is not available in this view.'; return; }
+      saver.save({ filename: DATA.meta.pdf, data: pdfBlob })
+        .then(() => { st.textContent = 'Saved.'; })
+        .catch(err => { st.textContent = err && err.code === 'declined' ? 'Download cancelled.' : 'The download did not go through. Try again.'; });
+    });
+  }
+
+  /* light beneath dark water: a slow field of soft blooms, cover only */
+  const rippleNoise = $('rippleNoise'), ripplePush = $('ripplePush'), swayNoise = $('swayNoise'), swayPush = $('swayPush');
+  const cv = $('water'), ctx = cv.getContext('2d'), hero = $('top'), portrait = $('portrait');
+  let W = 0, H = 0, running = false, visible = true, surge = 0, t0 = 0, px = .5, py = .4;
+  const blooms = Array.from({ length: 26 }, (_, i) => ({ x: Math.random(), y: Math.random(), r: 30 + Math.random() * 110, s: .004 + Math.random() * .01, p: Math.random() * 6.28, c: i % 3 }));
+  const cols = ['127,220,255', '91,151,255', '42,85,220'];
+  function size(){ const d = Math.min(window.devicePixelRatio || 1, 1.5); W = hero.clientWidth; H = hero.clientHeight; cv.width = W * d; cv.height = H * d; ctx.setTransform(d, 0, 0, d, 0, 0); }
+  function draw(t){
+    ctx.clearRect(0, 0, W, H); ctx.globalCompositeOperation = 'lighter';
+    for (const b of blooms) {
+      const x = (b.x + Math.sin(t * .00011 + b.p) * .05) * W, y = ((b.y - t * .0000022 * (b.s * 100) + 2) % 1.2 - .1) * H;
+      const a = (.05 + .05 * Math.sin(t * .0004 + b.p)) * (1 + surge * 1.6), r = b.r * (1 + surge * .25);
+      const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+      g.addColorStop(0, `rgba(${cols[b.c]},${a})`); g.addColorStop(1, `rgba(${cols[b.c]},0)`);
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, r, 0, 6.2832); ctx.fill();
+    }
+    surge *= .97;
+    /* moving water: the ripple field drifts and swells; her face is masked out and stays still */
+    const swell = .5 + .5 * Math.sin(t * .0006) * Math.sin(t * .00021 + 1.3);
+    rippleNoise.setAttribute('baseFrequency', (.011 + .003 * Math.sin(t * .00045)).toFixed(5) + ' ' + (.017 + .004 * Math.sin(t * .00033 + 2)).toFixed(5));
+    ripplePush.setAttribute('scale', (12 + 12 * swell + surge * 10).toFixed(2));
+    swayNoise.setAttribute('baseFrequency', (.007 + .003 * Math.sin(t * .0006 + 1)).toFixed(5) + ' ' + (.011 + .004 * Math.sin(t * .00047)).toFixed(5));
+    swayPush.setAttribute('scale', (24 + 16 * Math.sin(t * .0009)).toFixed(2));
+    portrait.style.setProperty('--lx', (50 + Math.sin(t * .00023) * 9 + (px - .5) * 10).toFixed(2) + '%');
+    portrait.style.setProperty('--ly', (36 + Math.cos(t * .00017) * 7 + (py - .5) * 8).toFixed(2) + '%');
+  }
+  function loop(t){ if (still || !visible) { running = false; return; } if (t - t0 > 32) { t0 = t; draw(t); } requestAnimationFrame(loop); }
+  function startWater(){ if (running || still || !visible) return; running = true; requestAnimationFrame(loop); }
+  size(); draw(4000);
+  window.addEventListener('resize', () => { size(); draw(performance.now()); });
+  hero.addEventListener('pointermove', e => { const r = hero.getBoundingClientRect(); px = (e.clientX - r.left) / r.width; py = (e.clientY - r.top) / r.height; });
+  if ('IntersectionObserver' in window) new IntersectionObserver(es => { visible = es[0].isIntersecting; startWater(); }).observe(hero);
+  /* the sea: a small WebGL shader. Large slow swells push the surface around; folded noise makes the wisps of light. */
+  (function(){
+    const c = $('sea'), gl = c.getContext('webgl', { antialias: false, alpha: false, powerPreference: 'low-power' }); if (!gl) return;
+    const vs = 'attribute vec2 a;void main(){gl_Position=vec4(a,0.,1.);}';
+    const fs = `precision mediump float;uniform vec2 r;uniform float t;uniform float e;
+      float h(vec2 p){p=fract(p*vec2(123.34,456.21));p+=dot(p,p+45.32);return fract(p.x*p.y);}
+      float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}
+      float fbm(vec2 p){float v=0.,a=.5;mat2 m=mat2(.8,.6,-.6,.8);for(int i=0;i<5;i++){v+=a*n(p);p=m*p*2.02;a*=.5;}return v;}
+      void main(){
+        vec2 uv=gl_FragCoord.xy/r.y; vec2 p=uv*2.3;
+        p+=vec2(sin(p.y*1.15+t*.33)*.22+sin(p.y*.4-t*.19)*.3+t*.035, cos(p.x*.95-t*.27)*.17+sin(p.x*.5+t*.15)*.2);   /* swell */
+        vec2 q=vec2(fbm(p+t*.055),fbm(p+vec2(5.2,1.3)-t*.045));
+        vec2 w=p+1.9*q;                                                                                               /* the surface folding over itself */
+        float a=fbm(w*1.25+vec2(0.,t*.07)); float wisps=pow(1.-abs(2.*a-1.),8.);
+        float b=fbm(w*2.9-t*.09);           float lace=pow(1.-abs(2.*b-1.),11.);
+        float where=smoothstep(.43,.72,fbm(p*.62+9.+t*.028));                                                         /* light gathers in drifting patches */
+        float glints=pow(n(w*17.+t*.5),16.)*where*2.2;
+        vec2 g=w*13.; vec2 id=floor(g); vec2 f=fract(g)-.5; float d=length(f-(vec2(h(id),h(id+7.))-.5)*.6);              /* scattered bubbles, like the foam around her */
+        float bub=smoothstep(.035,0.,abs(d-(.07+.15*h(id+3.))))*step(.6,h(id+11.))*where;
+        float light=wisps*(.07+.8*where)+lace*where*.8+bub*1.1;
+        vec3 deep=mix(vec3(.006,.016,.044),vec3(.014,.040,.092),fbm(p*.45+3.-t*.02));
+        vec3 col=deep+vec3(.15,.40,.63)*light+vec3(.60,.84,.96)*glints;
+        col*=mix(.5,mix(1.,.7,smoothstep(.6,1.05,gl_FragCoord.x/r.x)),e);                                                       /* settle into the photo's darker water on the right */
+        gl_FragColor=vec4(col,1.);}`;
+    const sh = (ty, src) => { const o = gl.createShader(ty); gl.shaderSource(o, src); gl.compileShader(o); return o; };
+    const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(pr);
+    if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) return;
+    gl.useProgram(pr); gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer()); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+    const loc = gl.getAttribLocation(pr, 'a'); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+    const uR = gl.getUniformLocation(pr, 'r'), uT = gl.getUniformLocation(pr, 't'), uE = gl.getUniformLocation(pr, 'e'); let run = false, last = 0;
+    function fit(){ const k = .6; c.width = Math.max(2, Math.round(window.innerWidth * k)); c.height = Math.max(2, Math.round(window.innerHeight * k)); gl.viewport(0, 0, c.width, c.height); }
+    function frame(ms){ gl.uniform2f(uR, c.width, c.height); gl.uniform1f(uT, ms / 1000 + 40); gl.uniform1f(uE, Math.max(0, 1 - window.scrollY / Math.max(1, hero.clientHeight * .8))); gl.drawArrays(gl.TRIANGLES, 0, 3); }
+    function tick(ms){ if (still || document.hidden) { run = false; return; } if (ms - last > 30) { last = ms; frame(ms); } requestAnimationFrame(tick); }
+    function go(){ if (run || still) return; run = true; requestAnimationFrame(tick); }
+    fit(); frame(0); go();
+    window.addEventListener('resize', () => { fit(); frame(performance.now()); });
+    mt.addEventListener('click', go); document.addEventListener('visibilitychange', go);
+    window.addEventListener('scroll', () => { if (still) frame(performance.now()); }, { passive: true });
+  })();
+  applyMotion();
+})();
+</script>
+
+</body></html>
