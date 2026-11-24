@@ -172,8 +172,15 @@ footer .wrap{justify-content:center;text-align:center}
 .emblem img{width:clamp(84px,9.5vw,132px);height:auto;display:block;filter:drop-shadow(0 0 18px rgba(90,160,255,.45))}
 @media (max-width:760px){.emblem img{width:64px}}
 /* pop-up player for the reference records (hosted page only; inside a Claude artifact titles open a new tab) */
-dialog.player{border:1px solid rgba(127,220,255,.4);padding:0;background:#050b1e;color:var(--text);width:min(880px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto;border-radius:8px;box-shadow:0 0 60px rgba(40,150,255,.35)}
-dialog.player::backdrop{background:rgba(2,5,14,.82);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+dialog.player{position:fixed;inset:auto;margin:0;z-index:60;right:max(14px,env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));width:min(360px,calc(100vw - 28px));
+  border:1px solid rgba(127,220,255,.45);padding:0;background:#050b1e;color:var(--text);max-height:calc(100dvh - 28px);overflow:auto;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.6),0 0 40px rgba(40,150,255,.3)}
+dialog.player.big{right:auto;bottom:auto;left:50%;top:50%;transform:translate(-50%,-50%);width:min(920px,calc(100vw - 24px));box-shadow:0 0 0 100vmax rgba(2,5,14,.72),0 0 60px rgba(40,150,255,.35)}
+dialog.player:not(.big) .bar{padding:.6rem .7rem .7rem;gap:.5rem}
+dialog.player:not(.big) h3{font-size:1.15rem}
+dialog.player:not(.big) .by{font-size:.98rem}
+dialog.player:not(.big) .acts{gap:.35rem}
+dialog.player:not(.big) .acts a{display:none}
+dialog.player:not(.big) .acts button{padding:.5rem .65rem;font-size:.66rem;letter-spacing:.1em}
 .player .frame{position:relative;aspect-ratio:16/9;background:#000}
 .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .player .bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.8rem 1.4rem;padding:1rem 1.2rem 1.1rem}
@@ -260,7 +267,7 @@ dialog.player::backdrop{background:rgba(2,5,14,.82);-webkit-backdrop-filter:blur
   <div class="frame" id="plFrame"></div>
   <div class="bar">
     <div><h3 id="plTitle"></h3><p class="by" id="plBy"></p></div>
-    <div class="acts"><button type="button" id="plPrev">← Prev</button><button type="button" id="plNext">Next →</button><a id="plOpen" href="" target="_blank" rel="noopener">Open on YouTube</a><button type="button" id="plClose">Close</button></div>
+    <div class="acts"><button type="button" id="plPrev">← Prev</button><button type="button" id="plNext">Next →</button><button type="button" id="plSize" aria-pressed="false">Enlarge</button><a id="plOpen" href="" target="_blank" rel="noopener">Open on YouTube</a><button type="button" id="plClose">Close</button></div>
   </div>
 </dialog>
 
@@ -294,15 +301,16 @@ const DATA = {"meta": {"artist": "SECILY", "title": "PROJECT BRIEF", "label": "T
     const f = document.createElement('iframe'); f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?rel=0&playsinline=1';
     f.title = r.title + (r.artist ? ', ' + r.artist : ''); f.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen'; f.allowFullscreen = true; f.referrerPolicy = 'strict-origin-when-cross-origin';
     $('plFrame').replaceChildren(f); }
-  if (canEmbed && pl.showModal) {
-    document.querySelectorAll('.fine').forEach(n => { if (/new tab/.test(n.textContent)) n.textContent = 'Tap a title to open the player. Nothing plays until you press play. * Proposed, not yet in the approved brief.'; });
+  if (canEmbed && pl.show) {
+    document.querySelectorAll('.fine').forEach(n => { if (/new tab/.test(n.textContent)) n.textContent = 'Tap a title to open the player. It stays in the corner while you scroll; press Enlarge for a bigger view. Nothing plays until you press play. * Proposed, not yet in the approved brief.'; });
     $('plPrev').addEventListener('click', () => plShow(plI - 1)); $('plNext').addEventListener('click', () => plShow(plI + 1));
     $('plClose').addEventListener('click', () => { $('plFrame').replaceChildren(); pl.close(); });
-    pl.addEventListener('click', e => { if (e.target === pl) { $('plFrame').replaceChildren(); pl.close(); } });
+    const sz = $('plSize'); sz.addEventListener('click', () => { const big = pl.classList.toggle('big'); sz.textContent = big ? 'Shrink' : 'Enlarge'; sz.setAttribute('aria-pressed', String(big)); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && pl.open) { if (pl.classList.contains('big')) sz.click(); else { $('plFrame').replaceChildren(); pl.close(); } } });
     pl.addEventListener('close', () => { $('plFrame').replaceChildren(); if (plFrom) plFrom.focus(); });
   }
   $('cloud').addEventListener('click', e => { const a = e.target.closest('a'); if (!a) return;
-    if (canEmbed && pl.showModal && !e.metaKey && !e.ctrlKey) { e.preventDefault(); plFrom = a; plShow([...document.querySelectorAll('#cloud a')].indexOf(a)); pl.showModal(); } document.querySelectorAll('.cloud a.lit').forEach(x => x.classList.remove('lit')); a.classList.add('lit'); surge = 1; });
+    if (canEmbed && pl.show && !e.metaKey && !e.ctrlKey) { e.preventDefault(); plFrom = a; plShow([...document.querySelectorAll('#cloud a')].indexOf(a)); if (!pl.open) pl.show(); } document.querySelectorAll('.cloud a.lit').forEach(x => x.classList.remove('lit')); a.classList.add('lit'); surge = 1; });
   $('themes').innerHTML = DATA.themes.map(t => `<li>${esc(t)}</li>`).join('');
   $('concepts').innerHTML = DATA.concepts.map(c => `<li><b>${esc(c.title)}</b><span>${esc(c.q)}</span></li>`).join('');
   $('statement').textContent = DATA.statement;
