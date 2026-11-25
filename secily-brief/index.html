@@ -189,6 +189,22 @@ dialog.player:not(.big) .acts button{padding:.5rem .65rem;font-size:.66rem;lette
 .player .acts{display:flex;gap:.6rem;flex-wrap:wrap}
 .player .acts a,.player .acts button{font:600 .74rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ice);border:1px solid var(--line);border-radius:99px;padding:.65rem 1rem;text-decoration:none;background:none;cursor:pointer}
 .player .acts a:hover,.player .acts button:hover{border-color:var(--glow);color:#fff}
+/* phone cover: the photo sits whole at the top, the name and details stack beneath it */
+@media (max-width:760px){
+  .portrait{inset:0 0 auto 0;width:100%;height:auto;aspect-ratio:1/1;max-height:92svh;transform:none;-webkit-mask-image:none;mask-image:none}
+  .portrait img{object-position:50% 50%}
+  .portrait .ripple{-webkit-mask-image:radial-gradient(ellipse 30% 30% at 58% 40%,transparent 55%,#000 100%);mask-image:radial-gradient(ellipse 30% 30% at 58% 40%,transparent 55%,#000 100%)}
+  .portrait::after{background:linear-gradient(0deg,var(--abyss) 0,rgba(4,9,23,.55) 12%,rgba(4,9,23,0) 34%),linear-gradient(180deg,rgba(4,9,23,.6) 0,rgba(4,9,23,0) 20%)}
+  .hero-in{min-height:0;justify-content:flex-start;align-items:center;text-align:center;gap:1.1rem;padding-block:min(calc(100vw - 3.2rem),calc(92svh - 3.2rem)) 3rem}
+  .hero .name{font-size:clamp(5.2rem,27vw,9.5rem);transform:rotate(-5deg);transform-origin:center;margin:0 0 .1em;padding:.12em .2em .16em}
+  .pill,.facts,.cta{align-self:center}
+  .facts{justify-content:center;text-align:center;gap:.7rem 2rem}
+  .facts div{align-items:center}
+  .facts div:first-child{flex-basis:100%}
+  .cta{margin-top:.4rem}
+  .emblem{bottom:auto;top:4.4rem}
+  .portrait .rose{display:none}
+}
 </style>
 
 <div class="water" aria-hidden="true"><canvas id="sea"></canvas></div>
